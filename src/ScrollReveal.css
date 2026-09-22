@@ -1,0 +1,22 @@
+/* Adapted from React Bits ScrollReveal (JS-CSS), MIT + Commons Clause;
+   see licences/react-bits-LICENSE.md. */
+.scroll-reveal {
+  margin: 0;
+}
+.scroll-reveal-text {
+  margin: 0;
+  font: inherit;
+  line-height: inherit;
+}
+.scroll-reveal .word {
+  display: inline-block;
+}
+@media (prefers-reduced-motion: reduce), print {
+  .scroll-reveal {
+    transform: none !important;
+  }
+  .scroll-reveal .word {
+    opacity: 1 !important;
+    filter: none !important;
+  }
+}

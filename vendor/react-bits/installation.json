@@ -1,0 +1,29 @@
+{
+  "installedOn": "2026-09-15",
+  "component": "@react-bits/ScrollExpand-JS-CSS",
+  "cli": "shadcn 4.21.0",
+  "command": "npx --yes shadcn@latest add @react-bits/ScrollExpand-JS-CSS --yes --cwd work/scroll-expand-install",
+  "dependencyChanges": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "file": "src/ScrollExpand.css",
+      "cliBytes": 1930,
+      "registryBytes": 1930,
+      "cliMatchesRegistryExactly": true,
+      "sha256": "1904e6e0c498a45b11b16521e64dafb02f9e7e2bd33305bb7134fb0081d39c1e"
+    },
+    {
+      "file": "src/ScrollExpand.jsx",
+      "cliBytes": 6660,
+      "registryBytes": 6631,
+      "cliMatchesRegistryExactly": false,
+      "sha256": "129f2296bb2e684d644c9cc3ad3128676b8806ab0b935b16470d9bbf00704714"
+    }
+  ],
+  "registrySnapshot": {
+    "url": "https://reactbits.dev/r/ScrollExpand-JS-CSS.json",
+    "note": "Saved locally at install time; not redistributed.",
+    "sha256": "df1d89c2e34b3dbd5e5be6c3679ee894994b078b76733386a471109b7be9e5d8"
+  }
+}

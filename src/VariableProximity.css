@@ -1,0 +1,29 @@
+/* Adapted from React Bits VariableProximity (JS-CSS), MIT + Commons Clause;
+   see licences/react-bits-LICENSE.md. */
+/* Digits-only subset of Roboto Flex (SIL Open Font Licence 1.1), hosted locally
+   with its weight and optical-size axes; see generate-roboto-flex-digits.py. */
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('/fonts/roboto-flex-digits.woff2') format('woff2');
+  font-weight: 100 1000;
+  font-display: swap;
+  unicode-range: U+0030-0039;
+}
+.variable-proximity {
+  font-family: 'Roboto Flex', 'Manrope', sans-serif;
+  font-synthesis: none;
+}
+.variable-proximity__word { display: inline-block; white-space: nowrap; }
+.variable-proximity__letter { display: inline-block; }
+.variable-proximity__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

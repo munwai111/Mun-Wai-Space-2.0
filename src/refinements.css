@@ -1,0 +1,171 @@
+/* A little ink in the margins, within the existing mineral palette. */
+.has-quiet-field {
+  position: relative;
+  isolation: isolate;
+}
+.quiet-field {
+  --quiet-field-ink: var(--ink);
+  --quiet-field-opacity: 0.085;
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: min(100%, 760px);
+  pointer-events: none;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 14%,
+    #000 68%,
+    transparent
+  );
+}
+:root[data-theme="dark"] .quiet-field {
+  --quiet-field-opacity: 0.105;
+}
+
+/* The fill moves beneath one readable label; the button keeps its dimensions. */
+.button.primary {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 5px 15px 5px 15px;
+  box-shadow: 0 2px 0 color-mix(in srgb, var(--button) 25%, transparent);
+  transition:
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease),
+    border-color 0.25s;
+}
+.button.primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--button-text);
+  opacity: 0.1;
+  transform: translateX(-103%);
+  transition: transform 0.32s var(--ease);
+  pointer-events: none;
+}
+.button.primary:is(:hover, :focus-visible) {
+  background: var(--button);
+  color: var(--button-text);
+  border-color: var(--button);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 color-mix(in srgb, var(--button) 25%, transparent);
+}
+.button.primary:is(:hover, :focus-visible)::before {
+  transform: translateX(0);
+}
+.button.primary > svg {
+  transition: transform 0.3s var(--ease);
+}
+.button.primary:is(:hover, :focus-visible) > svg {
+  transform: translate(2px, -2px);
+}
+.hero-cta .button.primary:is(:hover, :focus-visible) > svg {
+  transform: translateY(3px);
+}
+.button.primary:active:not(:disabled) {
+  transform: translateY(1px) scale(0.985);
+  box-shadow: none;
+}
+.nav-contact:focus-visible {
+  transform: translateY(-2px) rotate(-1deg);
+  box-shadow: 0 5px 0 var(--accent-ink);
+}
+.nav-contact:focus-visible svg {
+  transform: rotate(45deg);
+}
+.nav-contact:is(:hover, :focus-visible) .hello-arrow {
+  animation-play-state: paused;
+  background: color-mix(in srgb, var(--accent-ink) 7%, transparent);
+}
+.nav-contact .hello-arrow {
+  transition: background 0.3s var(--ease);
+}
+
+/* Digital frames share the contact button's soft corner rhythm.
+ * Photographic paper, stamps and the existing Polaroids keep their own edges. */
+.project-art {
+  border-radius: 10px 22px 10px 22px;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 9%, transparent);
+}
+.project-open .open-project {
+  transition:
+    background 0.25s,
+    color 0.25s,
+    transform 0.3s var(--ease);
+}
+.project-open:is(:hover, :focus-visible) .open-project {
+  background: var(--ink);
+  color: var(--paper);
+  transform: translate(1px, -1px);
+}
+.project-open:focus-visible .poster-mark {
+  transform: translateY(-8px);
+}
+.case-evidence__archive-photo {
+  overflow: hidden;
+  border-radius: 8px 18px 8px 18px;
+}
+
+/* Optional progress detail: bind a Motion value to scaleX, with no scroll lock. */
+.reading-progress {
+  position: absolute;
+  inset: auto 0 -1px;
+  height: 2px;
+  background: var(--ink);
+  opacity: 0.5;
+  transform-origin: left;
+  pointer-events: none;
+}
+:root[data-theme="dark"] .reading-progress {
+  background: var(--accent);
+}
+html.listening-open .reading-progress,
+html.impact-open .reading-progress {
+  visibility: hidden;
+}
+
+:root[data-calm="true"] .button.primary,
+:root[data-calm="true"] .button.primary::before,
+:root[data-calm="true"] .button.primary > svg,
+:root[data-calm="true"] .nav-contact,
+:root[data-calm="true"] .nav-contact svg,
+:root[data-calm="true"] .nav-contact .hello-arrow,
+:root[data-calm="true"] .project-open .open-project {
+  transition: none;
+}
+:root[data-calm="true"] .button.primary:is(:hover, :focus-visible, :active),
+:root[data-calm="true"] .button.primary:is(:hover, :focus-visible) > svg,
+:root[data-calm="true"] .nav-contact:is(:hover, :focus-visible, :active),
+:root[data-calm="true"] .nav-contact:is(:hover, :focus-visible) svg,
+:root[data-calm="true"] .project-open:is(:hover, :focus-visible) .open-project {
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .button.primary,
+  .button.primary::before,
+  .button.primary > svg,
+  .nav-contact,
+  .nav-contact svg,
+  .nav-contact .hello-arrow,
+  .project-open .open-project {
+    transition: none;
+  }
+  .button.primary:is(:hover, :focus-visible, :active),
+  .button.primary:is(:hover, :focus-visible) > svg,
+  .nav-contact:is(:hover, :focus-visible, :active),
+  .nav-contact:is(:hover, :focus-visible) svg,
+  .project-open:is(:hover, :focus-visible) .open-project {
+    transform: none;
+  }
+}
+@media print {
+  .quiet-field,
+  .reading-progress {
+    display: none;
+  }
+}

@@ -1,0 +1,2458 @@
+AI Unplugged — Psychology Meets AI
+Hosted by Evangeline Wong and Aarush Pandey, with guest Mun Wai Looi
+Monash DeepNeuron · 23 October 2025
+The episode belongs to AI Unplugged / Monash DeepNeuron and is shared with credit.
+
+Automatic transcript and speaker labels. Occasional recognition or attribution errors may remain.
+Original: https://open.spotify.com/episode/4PGM2iWZIBl0OCHZOANxnC
+
+[0:00] Evangeline Wong
+Hi everyone, my name is Evangeline.
+
+[0:02] Aarush Pandey
+And I'm Aarush.
+
+[0:03] Evangeline Wong
+And welcome to AI Unplugged, a podcast created by Monash DeepNeuron,
+
+[0:07] Evangeline Wong
+Australia's premier student -led team focusing on artificial
+
+[0:10] Evangeline Wong
+intelligence and optimised computing.
+
+[0:15] Aarush Pandey
+Before we kick off this episode, I'd like to begin by
+
+[0:17] Aarush Pandey
+acknowledging the traditional owners of the land on which we meet
+
+[0:19] Aarush Pandey
+today. I would also like to pay my respects to elders
+
+[0:22] Aarush Pandey
+past, present and emerging.
+
+[0:23] Evangeline Wong
+So on today's episode, we have a really special guest.
+
+[0:26] Evangeline Wong
+Can everyone please welcome Mun Wai.
+
+[0:30] Mun Wai Looi
+What's up? What's up?
+
+[0:30] Mun Wai Looi
+Special
+
+[0:30] Evangeline Wong
+guest. Wow. Yes. So welcome to AI Unplugged.
+
+[0:33] Evangeline Wong
+And we're really, really interested in your role because obviously
+
+[0:36] Evangeline Wong
+everyone knows that AI is taking over a lot of jobs,
+
+[0:39] Evangeline Wong
+but we have jobs like yours that are being created.
+
+[0:41] Evangeline Wong
+So let's kick it off.
+
+[0:43] Evangeline Wong
+Tell us all about yourself and what you do as an
+
+[0:45] Evangeline Wong
+AI prompt consultant.
+
+[0:47] Mun Wai Looi
+All right.
+
+[0:48] Mun Wai Looi
+A little about me is that I'm pretty much new.
+
+[0:51] Mun Wai Looi
+I'm pretty much like a, just graduated last year, honestly.
+
+[0:54] Aarush Pandey
+Awesome.
+
+[0:54] Mun Wai Looi
+And I'm with a Bachelor of Applied Science Psychology.
+
+[0:58] Mun Wai Looi
+And yeah, a lot of people must be wondering like how
+
+[1:00] Mun Wai Looi
+did I even get into AI in the first place?
+
+[1:02] Mun Wai Looi
+Yeah. So it's like a very interesting shift.
+
+[1:06] Mun Wai Looi
+So let's get into the prompt consultant thing.
+
+[1:09] Mun Wai Looi
+So what I usually do is like, imagine me like a
+
+[1:12] Mun Wai Looi
+teacher. Sure. So a lot of the times, AI have like
+
+[1:16] Mun Wai Looi
+a lot of outputs and stuff that sometimes can, you know,
+
+[1:19] Mun Wai Looi
+accuracy problems, sometimes can be a lot of a user problem.
+
+[1:22] Mun Wai Looi
+So what we do, we try to improve its database.
+
+[1:25] Mun Wai Looi
+We try to improve like how AI responds in a more
+
+[1:29] Mun Wai Looi
+efficient way, in a more effective way.
+
+[1:31] Mun Wai Looi
+And sometimes, basically reduce things like hallucination issues,
+
+[1:35] Mun Wai Looi
+honestly.
+
+[1:36] Mun Wai Looi
+But yeah, like to optimise and test problems that are few
+
+[1:40] Mun Wai Looi
+specific. So what I do, since my background is psychology, I
+
+[1:43] Mun Wai Looi
+basically, you know, try to improve the AI knowledge in psychology
+
+[1:47] Mun Wai Looi
+and English language.
+
+[1:50] Mun Wai Looi
+So we evaluate the response.
+
+[1:54] Mun Wai Looi
+We first prompt the AI with the intention of wanting to
+
+[1:57] Mun Wai Looi
+stump. It's logical. It's logical.
+
+[2:06] Mun Wai Looi
+And then after when AI responds to our problem, we will
+
+[2:10] Mun Wai Looi
+evaluate based on a lot of criteria that are set by
+
+[2:13] Mun Wai Looi
+the company that hired, which is actually called Outlier AI.
+
+[2:18] Evangeline Wong
+Yeah, okay. So tell us a bit more about Outlier.
+
+[2:20] Evangeline Wong
+How does that structure work?
+
+[2:21] Evangeline Wong
+What kind of companies do you work with?
+
+[2:23] Evangeline Wong
+Do they connect you to people?
+
+[2:26] Mun Wai Looi
+I don't know about connection with people because it's like an
+
+[2:29] Mun Wai Looi
+online job, honestly. okay.
+
+[2:31] Mun Wai Looi
+Because again, I'm just freelancing.
+
+[2:32] Mun Wai Looi
+It's not like a full -time.
+
+[2:33] Mun Wai Looi
+This is like a slight hustle for me.
+
+[2:36] Mun Wai Looi
+We've a lot about like the, you know, how the back
+
+[2:39] Mun Wai Looi
+-end, how people start training LMs, how people start expanding and
+
+[2:43] Mun Wai Looi
+building AI for, actually mainly in open sources as well.
+
+[2:47] Mun Wai Looi
+So yeah, like ChatGPTs and stuff like, sometimes you guys use
+
+[2:51] Mun Wai Looi
+ChatGPTs or I don't know, DeepSeq or Cloud.
+
+[2:54] Mun Wai Looi
+And sometimes with the response and come up like, okay, this
+
+[2:57] Mun Wai Looi
+response wants a response to tell us which one you prefer.
+
+[3:00] Mun Wai Looi
+So this is like a step beyond that.
+
+[3:03] Mun Wai Looi
+Though we evaluate on the output quality, but we also rank
+
+[3:07] Mun Wai Looi
+them based on like the criteria, which I actually...
+
+[3:11] Evangeline Wong
+Yeah, tell us more about this criteria.
+
+[3:13] Mun Wai Looi
+Yeah, so the criteria is...
+
+[3:15] Mun Wai Looi
+Okay, the funniest thing is I name it this way, this
+
+[3:17] Mun Wai Looi
+is easier. It's called the ARC.
+
+[3:20] Mun Wai Looi
+THD ARC stands for which includes like tone, style alignment,
+
+[3:24] Mun Wai Looi
+helpfulness, efficiency, accuracy, relevance, and clarity in the AI
+
+[3:29] Mun Wai Looi
+response.
+
+[3:31] Mun Wai Looi
+So yeah, these are the things just to improve the quality,
+
+[3:35] Mun Wai Looi
+the overall quality of AI, like generative AI responses to any
+
+[3:39] Mun Wai Looi
+problem. Like for example, like if they, the given scenario is
+
+[3:45] Mun Wai Looi
+like, okay, here's a high school student, right?
+
+[3:46] Mun Wai Looi
+They want to learn about, I don't know, psychology and stress.
+
+[3:50] Mun Wai Looi
+Yeah. So what we do is that we try to improve
+
+[3:54] Mun Wai Looi
+the user experience, like strictly for...
+
+[4:00] Mun Wai Looi
+For example, the high school student condition.
+
+[4:01] Mun Wai Looi
+A lot of the time, people may not understand the technical
+
+[4:06] Mun Wai Looi
+terms or more professional terms.
+
+[4:08] Mun Wai Looi
+Definitely. I sympathize that.
+
+[4:09] Mun Wai Looi
+If I were to prompt the AI to say, all right,
+
+[4:12] Mun Wai Looi
+explain stress to me, like you're trying to explain to the
+
+[4:16] Mun Wai Looi
+high school student as in -depth as possible,
+
+[4:19] Mun Wai Looi
+AI is going to give me exactly what I asked for.
+
+[4:21] Mun Wai Looi
+It's not going to be like, all right, here's some really
+
+[4:23] Mun Wai Looi
+complicated term or it's going to give you a very PhD
+
+[4:26] Mun Wai Looi
+level scholarly articles and you're going to read through
+
+[4:28] Mun Wai Looi
+everything.
+
+[4:30] Mun Wai Looi
+So these are the criteria that help improve that.
+
+[4:32] Mun Wai Looi
+It's just to improve the user experience overall.
+
+[4:34] Mun Wai Looi
+Oh,
+
+[4:34] Evangeline Wong
+that's awesome. Okay. So I guess that's so cool.
+
+[4:37] Evangeline Wong
+And it's like a whole new world because going beyond what
+
+[4:39] Evangeline Wong
+we see, like, I guess as users, we interact with that
+
+[4:41] Evangeline Wong
+chat GPT. They tell us, do you like preference one, preference
+
+[4:42] Evangeline Wong
+two, but your job obviously takes that to a more technical
+
+[4:45] Evangeline Wong
+level. So
+
+[4:46] Mun Wai Looi
+yeah,
+
+[4:47] Evangeline Wong
+without live, so I'm assuming they give you these projects.
+
+[4:49] Evangeline Wong
+Do you take on any type of domain, any topic or
+
+[4:51] Evangeline Wong
+just specifically psychology?
+
+[4:53] Mun Wai Looi
+So how it works is that like when I, okay, let's
+
+[4:57] Mun Wai Looi
+just start from scratch.
+
+[5:00] Mun Wai Looi
+We get an account and then we'll, when it comes to
+
+[5:03] Mun Wai Looi
+the landing page, it will show two things like your dashboard
+
+[5:05] Mun Wai Looi
+and of course the job marketplace or we call it the
+
+[5:08] Mun Wai Looi
+project marketplace. Yeah. And before you even get to like selecting
+
+[5:11] Mun Wai Looi
+job, like you have to get yourself be listed in like
+
+[5:16] Mun Wai Looi
+certain fields. So I list myself in psychology.
+
+[5:18] Mun Wai Looi
+Okay. Okay. That makes sense.
+
+[5:19] Mun Wai Looi
+Yeah. Yeah. I mean, they're not going to bring some random
+
+[5:21] Mun Wai Looi
+people. about it. Yeah.
+
+[5:23] Mun Wai Looi
+Yeah.
+
+[5:24] Mun Wai Looi
+cause again, this is a very sensitive job because if any
+
+[5:28] Mun Wai Looi
+misinformation or disinformation can really, really disrupt or
+
+[5:31] Mun Wai Looi
+detrimental to the model itself.
+
+[5:36] Mun Wai Looi
+Yeah. So there's the, of course, there's a lot of training
+
+[5:38] Mun Wai Looi
+behind, there's a lot of like authentication and aptitude tests to
+
+[5:42] Mun Wai Looi
+done to really, really get a person's like legit qualifications
+
+[5:46] Mun Wai Looi
+before they actually teach the AI model to, you know,
+
+[5:50] Aarush Pandey
+learn from the given data.
+
+[5:53] Aarush Pandey
+And really like prove that you were qualified to consult about
+
+[5:56] Aarush Pandey
+prompts with AI.
+
+[5:57] Mun Wai Looi
+Yeah. Yeah. And, and of course, um, though, though, like, to,
+
+[5:59] Mun Wai Looi
+to, to,
+
+[6:02] Mun Wai Looi
+And for me, I'm confident to do high school level, like
+
+[6:05] Mun Wai Looi
+ECE stuff. I'm not going to say, yeah, I can be
+
+[6:07] Mun Wai Looi
+a research professor right now.
+
+[6:10] Mun Wai Looi
+In level. Yeah, PhD level.
+
+[6:11] Mun Wai Looi
+It's just that sort of thing because they will test you
+
+[6:14] Mun Wai Looi
+and then they will look at your qualifications as well.
+
+[6:18] Mun Wai Looi
+And a lot of authentication.
+
+[6:20] Mun Wai Looi
+Yeah,
+
+[6:21] Evangeline Wong
+that makes sense. And going back to your analogy about you're
+
+[6:23] Evangeline Wong
+a tutor, right? Obviously, you can't tutor PhD students if you
+
+[6:26] Evangeline Wong
+haven't, you know, not qualified.
+
+[6:28] Evangeline Wong
+yeah.
+
+[6:29] Mun Wai Looi
+Or not have the knowledge or the skills to do so.
+
+[6:32] Evangeline Wong
+Awesome. So tell us more about, I guess, going into more
+
+[6:35] Evangeline Wong
+about like the grit of your work.
+
+[6:37] Evangeline Wong
+Tell us about like your, do you have like a favorite
+
+[6:38] Evangeline Wong
+scenario you've been, you know, you've helped out to train?
+
+[6:43] Mun Wai Looi
+Wow, that's just a really tough question.
+
+[6:45] Mun Wai Looi
+Favorite scenario? Yeah. I think it is mostly,
+
+[6:50] Mun Wai Looi
+I think the better, the best scenario I always had is
+
+[6:53] Mun Wai Looi
+mostly involved in a lot of limitations.
+
+[6:55] Mun Wai Looi
+A lot of situational or context limitation.
+
+[6:59] Mun Wai Looi
+Okay. So like, it's not just like, you know, a high
+
+[7:03] Mun Wai Looi
+school student, but at what time?
+
+[7:05] Mun Wai Looi
+Like, you know, is it during exam?
+
+[7:06] Mun Wai Looi
+Like, I think that was one talking about like, okay, here's
+
+[7:08] Mun Wai Looi
+a high school student.
+
+[7:09] Mun Wai Looi
+They want to create like a study note specifically about like
+
+[7:14] Mun Wai Looi
+sleep or something. I can't remember exactly.
+
+[7:17] Mun Wai Looi
+And then they have an exam in two weeks time and
+
+[7:20] Mun Wai Looi
+they want to make it as the study note as effective
+
+[7:22] Mun Wai Looi
+as possible for them to memorize or learn the content.
+
+[7:25] Mun Wai Looi
+So a lot of these are what you call contextual limitations
+
+[7:29] Mun Wai Looi
+or boundaries that we give the AI to take into consideration
+
+[7:33] Mun Wai Looi
+before actually generating. So a lot of those, this thing is
+
+[7:36] Mun Wai Looi
+actually internal process. So, yeah.
+
+[7:40] Mun Wai Looi
+And again, we will evaluate them based on how well the
+
+[7:44] Mun Wai Looi
+AI responds. So if AI was to give you exactly what
+
+[7:47] Mun Wai Looi
+we asked for, then that's great.
+
+[7:49] Mun Wai Looi
+mean, but that's not our job, right?
+
+[7:50] Mun Wai Looi
+Our job is to stump them.
+
+[7:51] Mun Wai Looi
+Yeah. So like, for example,
+
+[7:55] Mun Wai Looi
+like, okay, one of the, one of the case I remember
+
+[7:56] Mun Wai Looi
+is that I asked for exactly what I want to study
+
+[7:59] Mun Wai Looi
+note, but then they...
+
+[8:00] Mun Wai Looi
+It extra information like fun facts.
+
+[8:02] Mun Wai Looi
+So the fun fact is very comprehensive.
+
+[8:04] Evangeline Wong
+And
+
+[8:05] Mun Wai Looi
+I feel like that's great, but I didn't ask for that.
+
+[8:07] Mun Wai Looi
+didn't need that. Yeah, we need that.
+
+[8:09] Mun Wai Looi
+And sometimes I feel like that can actually hinder the user
+
+[8:12] Mun Wai Looi
+experience as well.
+
+[8:13] Mun Wai Looi
+So one of my feedback was saying, okay, AI became too
+
+[8:17] Mun Wai Looi
+agentic, too creative with this response to the point that it
+
+[8:21] Mun Wai Looi
+provides beyond. Though it's great, it has this, you can say
+
+[8:25] Mun Wai Looi
+human behavior, like a humanized behavior.
+
+[8:30] Mun Wai Looi
+They can explain more.
+
+[8:31] Mun Wai Looi
+But it is not that, it's not directly helpful.
+
+[8:35] Mun Wai Looi
+So yeah, that's why we had to improve its output on
+
+[8:39] Mun Wai Looi
+that. And then of course, how we do that, we provide
+
+[8:41] Mun Wai Looi
+an example for the AI to learn our response.
+
+[8:45] Mun Wai Looi
+Like, you know, we don't actually write the response, but we
+
+[8:48] Mun Wai Looi
+write the example, like how they should work certain things or
+
+[8:52] Mun Wai Looi
+how they should structure the response.
+
+[8:53] Mun Wai Looi
+Sure. And then I think this information will go into two
+
+[8:56] Mun Wai Looi
+things. One, it'll go into the databanks.
+
+[8:59] Mun Wai Looi
+And then the other one will go to the engineers who
+
+[9:00] Mun Wai Looi
+actually, you know,
+
+[9:02] Mun Wai Looi
+rewire code the AI to improve
+
+[9:05] Aarush Pandey
+its output. Yeah. Right.
+
+[9:06] Aarush Pandey
+Cool. And you're not just like, like you said, you're not
+
+[9:09] Aarush Pandey
+just like looking for factual accuracy.
+
+[9:10] Aarush Pandey
+It's about like the whole experience.
+
+[9:14] Mun Wai Looi
+I mean, I don't know about you, I actually want to,
+
+[9:16] Mun Wai Looi
+I actually want to ask this, like, I've always wondered is,
+
+[9:19] Mun Wai Looi
+I heard a lot of people saying AI is really good
+
+[9:22] Mun Wai Looi
+at calculating, like a lot of things, the binaries and stuff
+
+[9:25] Mun Wai Looi
+like that. How true that is, I'm not too familiar, but
+
+[9:29] Mun Wai Looi
+with this company's assumption, the definite answer is yes.
+
+[9:34] Mun Wai Looi
+So our focus is not like, all right, tell me what's
+
+[9:38] Mun Wai Looi
+the answer when multiplied by, I don't know, 1 ,200 something
+
+[9:41] Mun Wai Looi
+number, like big numbers.
+
+[9:43] Mun Wai Looi
+Numbers is easy for AIs and computers.
+
+[9:47] Mun Wai Looi
+What we look for is not that we look for context.
+
+[9:49] Mun Wai Looi
+We look for, you know,
+
+[9:52] Mun Wai Looi
+yeah, a lot of these things, like prior knowledge that feeds
+
+[9:55] Mun Wai Looi
+into future outputs. So, yeah.
+
+[9:58] Evangeline Wong
+Yeah. So if I'm like picturing.
+
+[10:00] Evangeline Wong
+So, you're basically chatting with an AI as well yourself.
+
+[10:03] Evangeline Wong
+Yeah, mean Yeah. it's like, yeah, you're teaching it and training
+
+[10:06] Evangeline Wong
+in that way. Yeah.
+
+[10:07] Evangeline Wong
+I mean,
+
+[10:07] Mun Wai Looi
+in another way you can look at it as like a
+
+[10:08] Mun Wai Looi
+better tester, but it's more
+
+[10:10] Evangeline Wong
+technical. Yeah. It's fancy neighborhood.
+
+[10:12] Evangeline Wong
+More like specialized testing.
+
+[10:13] Evangeline Wong
+Yeah.
+
+[10:14] Evangeline Wong
+And so, what platform do you do this on?
+
+[10:16] Evangeline Wong
+Is there a special training platform or do you just use
+
+[10:18] Evangeline Wong
+like open source LLMs?
+
+[10:20] Mun Wai Looi
+Mostly open source. Like, the company didn't really disclose
+
+[10:24] Mun Wai Looi
+exactly, but they did say like all of these information are
+
+[10:27] Mun Wai Looi
+taken from and used for open source.
+
+[10:30] Mun Wai Looi
+Yeah.
+
+[10:31] Mun Wai Looi
+So, you know, and then these data will be transferred for
+
+[10:34] Mun Wai Looi
+like, you people who in the future want to use any
+
+[10:36] Mun Wai Looi
+models from China GPT, you know?
+
+[10:39] Mun Wai Looi
+Yeah.
+
+[10:39] Aarush Pandey
+Yeah.
+
+[10:39] Evangeline Wong
+And so, if we kind of look into it, and so
+
+[10:43] Evangeline Wong
+like as humans, right, we're kind of like inherently flawed.
+
+[10:46] Evangeline Wong
+And so, everything we say, I guess, is never 100 accurate.
+
+[10:49] Evangeline Wong
+So, if we're, if, you know, these companies are looking for
+
+[10:52] Evangeline Wong
+us to train the AI models, does that mean we're pumping
+
+[10:55] Evangeline Wong
+in bias and inaccuracy in a way?
+
+[11:00] Mun Wai Looi
+Good question, actually. Because like a lot of the scenario, a
+
+[11:03] Mun Wai Looi
+lot of the cases are not like, because they, they assure
+
+[11:06] Mun Wai Looi
+that there's going to be no bias involved.
+
+[11:09] Mun Wai Looi
+But there's not, there's not opinion.
+
+[11:11] Mun Wai Looi
+It's mostly facts. Okay.
+
+[11:12] Mun Wai Looi
+written, objectively measured stuff.
+
+[11:15] Mun Wai Looi
+It's like, you know, like I just gave you an example
+
+[11:17] Mun Wai Looi
+or learning about stress.
+
+[11:18] Mun Wai Looi
+I mean, unless, I don't know, some future studies say that,
+
+[11:21] Mun Wai Looi
+all right, this is wrong.
+
+[11:22] Mun Wai Looi
+And that's what we change, right?
+
+[11:24] Mun Wai Looi
+It's mostly based on facts.
+
+[11:25] Mun Wai Looi
+It's, you rarely, I don't think I ever seen any like
+
+[11:29] Mun Wai Looi
+project that requires subjective opinion.
+
+[11:32] Mun Wai Looi
+Because again, even evaluation, we have to give, because we have
+
+[11:35] Mun Wai Looi
+to document everything throughout the entire process of why we come
+
+[11:38] Mun Wai Looi
+to the conclusion of, you know, ranking them and scaling them
+
+[11:41] Mun Wai Looi
+a certain way. And, you know, yeah.
+
+[11:45] Mun Wai Looi
+So, and all of those things are not viewed subjectively.
+
+[11:50] Mun Wai Looi
+They are mostly objective.
+
+[11:51] Mun Wai Looi
+They are mostly, all right, have we considered the actual, like
+
+[11:56] Mun Wai Looi
+factual aspect of it?
+
+[11:57] Mun Wai Looi
+And we are not like putting our own opinion into And
+
+[12:00] Mun Wai Looi
+yeah, a lot of these things are very sensitive.
+
+[12:02] Mun Wai Looi
+And of course, beforehand they would give you trainings, like what
+
+[12:05] Mun Wai Looi
+sort of mentality you should have before you make a judgment
+
+[12:08] Mun Wai Looi
+or evaluation of the model.
+
+[12:10] Mun Wai Looi
+Like you can't, you know, even in your feedback, you have
+
+[12:12] Mun Wai Looi
+to be very careful, like certain words or certain phrasing you
+
+[12:14] Mun Wai Looi
+can't use because that can sort of influence, like a leading
+
+[12:17] Mun Wai Looi
+sort of thing. Yeah.
+
+[12:19] Aarush Pandey
+Yeah. Yeah.
+
+[12:19] Evangeline Wong
+That's good to know.
+
+[12:20] Evangeline Wong
+Like they won't ask you like, I don't know, like
+
+[12:22] Evangeline Wong
+Like
+
+[12:23] Mun Wai Looi
+the current political thing?
+
+[12:24] Mun Wai Looi
+Nah, no, no, like that.
+
+[12:25] Mun Wai Looi
+Like what's your take on this party or that party?
+
+[12:27] Mun Wai Looi
+Yeah. Yeah. These are what you call sensitive information because
+
+[12:31] Mun Wai Looi
+they're mainly subjective. It's very subjective.
+
+[12:34] Mun Wai Looi
+Definitely. Yeah.
+
+[12:35] Evangeline Wong
+100%. Yeah. Yeah. And so it's so cool because I guess
+
+[12:38] Evangeline Wong
+a lot of people think to do something with AI, to
+
+[12:40] Evangeline Wong
+work in AI, you need to have like a computer science
+
+[12:42] Evangeline Wong
+background or engineering. But it's really cool that you came from
+
+[12:45] Evangeline Wong
+a psychology background. so tell us a bit more about how
+
+[12:48] Evangeline Wong
+does that kind of merge into the, you know, your role
+
+[12:52] Evangeline Wong
+right now and yeah, all of that.
+
+[12:54] Mun Wai Looi
+Well, mean, computer science is mostly, I mean, it's mostly
+
+[13:00] Mun Wai Looi
+technical. So mostly in programming, mostly in developing and like
+
+[13:03] Mun Wai Looi
+the engineering aspect of like any, not even AI, even just
+
+[13:07] Mun Wai Looi
+like computer or algorithm and stuff like that.
+
+[13:10] Mun Wai Looi
+Yeah. Yeah.
+
+[13:10] Evangeline Wong
+Yeah.
+
+[13:13] Mun Wai Looi
+Yeah. Yeah. Yeah. Yeah.
+
+[13:15] Mun Wai Looi
+Yeah. So, uh,
+
+[13:17] Mun Wai Looi
+psychology, I believe have a strong correlation because in the end,
+
+[13:21] Mun Wai Looi
+um, as we all try to, you know, humanize the AI
+
+[13:25] Mun Wai Looi
+behavior and, and a lot of like processing and especially in
+
+[13:28] Mun Wai Looi
+interaction with people, with users and customers and, you know,
+
+[13:33] Mun Wai Looi
+it's just the whole vibe of, um, using AI and make
+
+[13:36] Mun Wai Looi
+them more human. That's where behavior became a huge, um, in
+
+[13:41] Mun Wai Looi
+this. Yeah. So again, psychology is a, you know, part of
+
+[13:45] Mun Wai Looi
+psychology studies human behaviours.
+
+[13:46] Mun Wai Looi
+And a lot of the time, a lot of the data
+
+[13:48] Mun Wai Looi
+are feed off of human behaviours and interactions.
+
+[13:51] Mun Wai Looi
+Yes. And like either by records or either by life interaction
+
+[13:54] Mun Wai Looi
+is learns from it.
+
+[13:55] Mun Wai Looi
+Like, like, you know, as you guys, as we all know,
+
+[13:57] Mun Wai Looi
+like, you know, AI is mimicking human learning ability.
+
+[14:00] Mun Wai Looi
+That is a behavior in a sense, learning behaviours, how AI
+
+[14:04] Mun Wai Looi
+learn based on what?
+
+[14:06] Mun Wai Looi
+Classical conditioning, what conditioning?
+
+[14:07] Mun Wai Looi
+Yeah,
+
+[14:08] Evangeline Wong
+that's so true. Before we can even...
+
+[14:10] Evangeline Wong
+Because it's literally called artificial intelligence and so we're
+
+[14:13] Evangeline Wong
+trying to mimic our behavior, but we have to understand our
+
+[14:16] Evangeline Wong
+own behavior before we can teach someone else to be like
+
+[14:18] Evangeline Wong
+us.
+
+[14:19] Aarush Pandey
+And there's two sides of doing that, obviously.
+
+[14:22] Aarush Pandey
+Having the technology to enable that, that's obviously something
+
+[14:25] Aarush Pandey
+that someone with a comp sci background might be doing.
+
+[14:30] Aarush Pandey
+It's element, right? Like if you're talking about making things more
+
+[14:33] Aarush Pandey
+usable, to know what a user wants, that's like an inherently
+
+[14:36] Aarush Pandey
+human thing. That's not necessarily something that having a
+
+[14:40] Aarush Pandey
+technical background would really even benefit you with.
+
+[14:43] Aarush Pandey
+Yeah.
+
+[14:44] Mun Wai Looi
+And to put it simply, why is this significant?
+
+[14:46] Mun Wai Looi
+Like if we were to like right now use any model
+
+[14:49] Mun Wai Looi
+and tell them, understand human without any context.
+
+[14:53] Evangeline Wong
+am I supposed to do that?
+
+[14:54] Mun Wai Looi
+AI will give you information, but they're very general and they're
+
+[14:59] Mun Wai Looi
+very...
+
+[15:01] Mun Wai Looi
+they're not human. Yeah.
+
+[15:03] Mun Wai Looi
+They're I were to ask you how to be human, you
+
+[15:06] Mun Wai Looi
+will give me a lot of other things that I, it's
+
+[15:07] Mun Wai Looi
+not technical or not general.
+
+[15:09] Mun Wai Looi
+You, you be, you, you, you, you, you, you will really
+
+[15:12] Mun Wai Looi
+press,
+
+[15:13] Mun Wai Looi
+personalize the experience of explaining what to be human is.
+
+[15:16] Mun Wai Looi
+Like, I mean, generally speaking, say, Oh, it's five, but what
+
+[15:19] Mun Wai Looi
+does that mean? You know?
+
+[15:20] Mun Wai Looi
+Yeah,
+
+[15:21] Evangeline Wong
+it's so deep. It's just, yeah, what is learning?
+
+[15:23] Evangeline Wong
+and so people are like you need to teach what is
+
+[15:25] Mun Wai Looi
+learning exactly yeah and I mean in a simple answer I
+
+[15:29] Mun Wai Looi
+have a strong interest in AI as well and we all
+
+[15:31] Mun Wai Looi
+know it's a growing feel but other than that I see
+
+[15:34] Mun Wai Looi
+there's a strong correlation between psychology and AI so that's why
+
+[15:38] Mun Wai Looi
+I'm a shift to it yeah
+
+[15:39] Evangeline Wong
+that's awesome it opens up because I think you're like one
+
+[15:43] Evangeline Wong
+of the first guests that we have that isn't from a
+
+[15:45] Evangeline Wong
+technical background and now we're really seeing the two coins to
+
+[15:47] Evangeline Wong
+AI like as Aarush said you can't just build the thing
+
+[15:49] Evangeline Wong
+and expect it to just work and act like a human
+
+[15:52] Evangeline Wong
+right we actually need people to fine tune it to put
+
+[15:55] Evangeline Wong
+your input and knowledge into it so that's really insightful it's
+
+[15:58] Evangeline Wong
+really cool that's why we have R
+
+[15:59] Aarush Pandey
+&D
+
+[16:00] Mun Wai Looi
+CSN, RNI's like field, like, you know, research and development and
+
+[16:03] Mun Wai Looi
+innovation aspect.
+
+[16:04] Aarush Pandey
+Yeah, that's true.
+
+[16:05] Mun Wai Looi
+So, I mean, there's like two ways, because you can either
+
+[16:08] Mun Wai Looi
+get the human, like, I don't know, the CX or US
+
+[16:11] Mun Wai Looi
+expect from actually, you know, getting feedback from users.
+
+[16:15] Mun Wai Looi
+Yeah. But honestly speaking, like, how many people actually use
+
+[16:18] Mun Wai Looi
+surveys? Yeah. Even with incentives.
+
+[16:22] Mun Wai Looi
+So another way is for people like, you know, who are
+
+[16:25] Mun Wai Looi
+in the field, who are studying those things, are able to
+
+[16:28] Mun Wai Looi
+provide at least, like a theoretical background to provide like a
+
+[16:33] Mun Wai Looi
+general benchmark, better than nothing.
+
+[16:36] Mun Wai Looi
+Yeah. That's where we can branch off.
+
+[16:38] Mun Wai Looi
+So, yeah. Yeah.
+
+[16:39] Evangeline Wong
+And just like out of curiosity, because you rank these, are
+
+[16:41] Evangeline Wong
+these rankings out of like 10, 100, 1 ,000?
+
+[16:43] Evangeline Wong
+Like what does that system look
+
+[16:44] Mun Wai Looi
+like? Oh, in that project, all of them is like out
+
+[16:48] Mun Wai Looi
+of five. Oh, One to five, one being just the weak
+
+[16:51] Mun Wai Looi
+and five being strong.
+
+[16:54] Mun Wai Looi
+And if it's when it comes to comparing models, like comparing
+
+[16:57] Mun Wai Looi
+modern outputs, like model A or model B.
+
+[17:00] Mun Wai Looi
+It's like a seven point, like a scale sort of thing.
+
+[17:02] Mun Wai Looi
+Okay. So, yeah. It's like, are you like, oh, I'll put
+
+[17:05] Mun Wai Looi
+like model A is the best to model B is the
+
+[17:07] Mun Wai Looi
+best. Or that's like a neutral response.
+
+[17:09] Mun Wai Looi
+Though they don't recommend the neutral response because they want
+
+[17:11] Mun Wai Looi
+to be definitive.
+
+[17:41] Mun Wai Looi
+Yeah.
+
+[17:43] Mun Wai Looi
+measure efficiency, how succinct, how concise, and how all this
+
+[17:48] Mun Wai Looi
+information is being communicated.
+
+[17:50] Mun Wai Looi
+So would you rather, is it easier to look at lines
+
+[17:54] Mun Wai Looi
+after lines, a paragraph after paragraph, or is it easier to
+
+[17:57] Mun Wai Looi
+just look at a cell from a table?
+
+[18:00] Mun Wai Looi
+Yeah, definitely. that's how we rank them.
+
+[18:07] Evangeline Wong
+Rank it. So cool.
+
+[18:08] Evangeline Wong
+And I guess the question I have is how long does
+
+[18:10] Evangeline Wong
+it typically take you to finish a project?
+
+[18:12] Evangeline Wong
+And how do you know that you're like, you're quote unquote
+
+[18:14] Evangeline Wong
+done with that?
+
+[18:18] Speaker
+So,
+
+[18:19] Mun Wai Looi
+there are layers actually.
+
+[18:21] Mun Wai Looi
+Tell
+
+[18:21] Evangeline Wong
+us more about these layers of the
+
+[18:23] Mun Wai Looi
+cake. That's what I'm imagining right now.
+
+[18:24] Mun Wai Looi
+Like Shrek. Yeah, literally.
+
+[18:26] Mun Wai Looi
+Yeah.
+
+[18:28] Mun Wai Looi
+Well, there are layers.
+
+[18:30] Mun Wai Looi
+How do I say this?
+
+[18:31] Mun Wai Looi
+It's like, okay, so first phase will be looking at the
+
+[18:36] Mun Wai Looi
+response individually.
+
+[18:39] Mun Wai Looi
+Then after comparing both response, we will then come to the
+
+[18:42] Mun Wai Looi
+third phase where we compare the two models.
+
+[18:45] Aarush Pandey
+Yeah.
+
+[18:47] Mun Wai Looi
+And then that's where we come to a final conclusion.
+
+[18:50] Mun Wai Looi
+All right, which one we should proceed?
+
+[18:52] Mun Wai Looi
+And even with proceed, they have like choices for you to
+
+[18:56] Mun Wai Looi
+determine like, okay, are we going to proceed this?
+
+[18:58] Mun Wai Looi
+All right, this is fine.
+
+[18:59] Mun Wai Looi
+We're going to do any future changes or any future, you
+
+[19:02] Mun Wai Looi
+know, tweaking. This is like, this model output is perfect.
+
+[19:06] Mun Wai Looi
+Or proceed this with caution where you will highlight, okay, there
+
+[19:10] Mun Wai Looi
+are some things that we need to tweak, but like the
+
+[19:12] Mun Wai Looi
+main things, like the main criteria are all good.
+
+[19:15] Mun Wai Looi
+But something that can like potentially breach the AI ethics.
+
+[19:19] Mun Wai Looi
+Yeah. We have to look into that.
+
+[19:21] Mun Wai Looi
+Definitely look into it.
+
+[19:22] Mun Wai Looi
+Yeah.
+
+[19:22] Evangeline Wong
+Awesome. So it takes you like a couple of hours?
+
+[19:26] Mun Wai Looi
+I would say like, definitely at least half an hour or
+
+[19:30] Mun Wai Looi
+40 minutes at least.
+
+[19:31] Mun Wai Looi
+Yeah. That's awesome. Per task or per project.
+
+[19:33] Mun Wai Looi
+Yeah.
+
+[19:34] Evangeline Wong
+That would make sense.
+
+[19:34] Evangeline Wong
+Because you don't want to just kind we don't skim through
+
+[19:36] Evangeline Wong
+it. Yeah, skim through it and then like, oh no, all
+
+[19:38] Evangeline Wong
+our models are going to be ruined guys because Bunwai.
+
+[19:40] Mun Wai Looi
+Yeah. And again, they also rank, I mean not rank, but
+
+[19:43] Mun Wai Looi
+they also determine the complexity of the task as well.
+
+[19:46] Mun Wai Looi
+Sometimes it can be really simple, but if it's like, you
+
+[19:48] Mun Wai Looi
+know, one of the one I tell you, like a lot
+
+[19:50] Mun Wai Looi
+more boundary set. Yeah.
+
+[19:51] Mun Wai Looi
+That one takes a lot longer.
+
+[19:53] Mun Wai Looi
+Yeah. can imagine. Because you have to,
+
+[19:55] Aarush Pandey
+you know, really consider all factors are covered.
+
+[19:58] Aarush Pandey
+Yeah. Yeah. Yeah. So how long it takes.
+
+[20:00] Aarush Pandey
+It depends on the complexity of what you're trying to get
+
+[20:02] Aarush Pandey
+it to do.
+
+[20:03] Mun Wai Looi
+So the more complex it is,
+
+[20:04] Aarush Pandey
+I think the longest I did was probably one and a
+
+[20:06] Aarush Pandey
+half. Okay. Yeah.
+
+[20:09] Aarush Pandey
+One and a half
+
+[20:10] Mun Wai Looi
+per task. It was the project, a project like three tasks,
+
+[20:16] Mun Wai Looi
+for example. so about like...
+
+[20:17] Mun Wai Looi
+So you spent like four and a hours.
+
+[20:19] Mun Wai Looi
+Okay, yeah, that's a solid amount of time.
+
+[20:21] Mun Wai Looi
+That's a long time.
+
+[20:22] Mun Wai Looi
+Yeah. But hey, mean, the rate is good anyway, so...
+
+[20:25] Evangeline Wong
+That's really... Oh, guys, guys, look at...
+
+[20:27] Evangeline Wong
+Everyone should be an AI pump consultant.
+
+[20:30] Evangeline Wong
+I'm out of uni.
+
+[20:31] Evangeline Wong
+Yeah. Yeah, no, that's really good.
+
+[20:32] Evangeline Wong
+And I think it's really cool that you're like, even though
+
+[20:34] Evangeline Wong
+this is, I guess, not like a psych -psych role, but
+
+[20:37] Evangeline Wong
+you're doing this as like a side hustle.
+
+[20:38] Evangeline Wong
+It's... You're learning so much, like, and you're still in that
+
+[20:41] Evangeline Wong
+psych domain, you know, which is...
+
+[20:43] Mun Wai Looi
+Yeah, I mean, again, it's just, I never like to limit
+
+[20:47] Mun Wai Looi
+myself when it comes to exploring, not even learning, just exploring
+
+[20:50] Mun Wai Looi
+in general. Like, yes, I mean, people always have like a
+
+[20:53] Mun Wai Looi
+pre -conceptual understanding of psychology students.
+
+[20:56] Mun Wai Looi
+All right, you got to be a therapist.
+
+[20:57] Mun Wai Looi
+All right, you got to deal with psychopathology backgrounds.
+
+[21:01] Mun Wai Looi
+Yes, that is a traditional, um, orthodox way to go about.
+
+[21:05] Mun Wai Looi
+But, uh, that's the reason why I chose applied science.
+
+[21:08] Aarush Pandey
+Yeah.
+
+[21:09] Mun Wai Looi
+That's what that name stands for.
+
+[21:11] Mun Wai Looi
+So when we applied science, so you have a...
+
+[21:13] Mun Wai Looi
+You major in psychology, but you are able to, you know,
+
+[21:16] Mun Wai Looi
+branch out to other fields beyond just, you know, clinical aspect.
+
+[21:20] Mun Wai Looi
+You can do it in technology and do it in like
+
+[21:22] Mun Wai Looi
+arts, can do it in creative arts and stuff like that,
+
+[21:25] Mun Wai Looi
+or even business. So, yeah.
+
+[21:28] Mun Wai Looi
+So that's, that's, um, my mentality.
+
+[21:31] Mun Wai Looi
+I never like to, because again, knowledge are not bound by
+
+[21:33] Mun Wai Looi
+occupations. Yeah. Yeah.
+
+[21:35] Aarush Pandey
+That's a really...
+
+[21:35] Mun Wai Looi
+You know, it's bound by the skill sets or like this.
+
+[21:38] Mun Wai Looi
+To what extent can you apply them, honestly?
+
+[21:41] Mun Wai Looi
+If there's value, then apply it.
+
+[21:43] Mun Wai Looi
+Yeah. If there's a gap, then look for
+
+[21:45] Aarush Pandey
+it.
+
+[21:45] Evangeline Wong
+Yeah. So, yeah. Yeah.
+
+[21:46] Evangeline Wong
+Yeah. That's awesome. Um, and I guess, is there like a
+
+[21:50] Evangeline Wong
+piece of advice that I sound, I don't know if it
+
+[21:51] Evangeline Wong
+sounds like cliche, but like if you could give a piece
+
+[21:54] Evangeline Wong
+of advice to someone about this field, about psych, what, what
+
+[21:57] Evangeline Wong
+would you kind of say?
+
+[21:58] Mun Wai Looi
+A piece of advice.
+
+[21:59] Mun Wai Looi
+A piece of advice.
+
+[22:01] Mun Wai Looi
+Keep an open mind.
+
+[22:03] Mun Wai Looi
+Because a lot of people, not even psychology, I think this
+
+[22:05] Mun Wai Looi
+goes for everyone. If you do anything like for freshmen in
+
+[22:12] Mun Wai Looi
+uni, anyone who wants to do their bachelor in any subject,
+
+[22:16] Mun Wai Looi
+I think the first thing, unless you really want to do
+
+[22:19] Mun Wai Looi
+that job, go for it.
+
+[22:20] Mun Wai Looi
+But if you are unsure of the profession that you want
+
+[22:23] Mun Wai Looi
+to pursue, don't limit yourself to a company or a sector
+
+[22:27] Mun Wai Looi
+or occupation.
+
+[22:30] Mun Wai Looi
+I really kills the ability for you to be flexible.
+
+[22:33] Mun Wai Looi
+And again, I think we have a lot of freedom now
+
+[22:37] Mun Wai Looi
+compared to back then.
+
+[22:39] Mun Wai Looi
+Though yes, jobs are being taken over by a lot of...
+
+[22:43] Mun Wai Looi
+they're being axed off, but a lot of new positions are
+
+[22:46] Mun Wai Looi
+being replaced. Like this one.
+
+[22:49] Mun Wai Looi
+Yeah. This
+
+[22:50] Evangeline Wong
+job didn't exist, what, two years ago?
+
+[22:53] Evangeline Wong
+It didn't exist.
+
+[22:54] Mun Wai Looi
+Literally. Exactly. Because now it's relevant and it's valuable.
+
+[22:57] Mun Wai Looi
+So that's how the world works.
+
+[23:00] Mun Wai Looi
+But yeah, mean, back to the point.
+
+[23:01] Mun Wai Looi
+It's just that don't limit yourself to occupations.
+
+[23:03] Mun Wai Looi
+Keep an open mind.
+
+[23:05] Mun Wai Looi
+Study the subject that you feel interested and then you feel
+
+[23:07] Mun Wai Looi
+like you want to, you know, deepen your skill sets and
+
+[23:10] Mun Wai Looi
+knowledge into it. And after getting yourself into it, really
+
+[23:15] Mun Wai Looi
+understand, all right, how can I see myself adding value to
+
+[23:20] Mun Wai Looi
+this in the future?
+
+[23:22] Mun Wai Looi
+Like, we're going to graduate one day and after graduation, there
+
+[23:25] Mun Wai Looi
+is no like certificate.
+
+[23:26] Mun Wai Looi
+There is no like, all right, here's a completion of...
+
+[23:28] Mun Wai Looi
+here's an assignment you finish.
+
+[23:30] Mun Wai Looi
+It's going to be like, all right, what job are you
+
+[23:32] Mun Wai Looi
+going to apply or what position are you going to look
+
+[23:35] Mun Wai Looi
+for? Not even a job.
+
+[23:36] Mun Wai Looi
+Sometimes you can even start your own business.
+
+[23:37] Mun Wai Looi
+Yeah. Yeah.
+
+[23:39] Mun Wai Looi
+So, yeah. So keep an open mind, I think, in short.
+
+[23:42] Mun Wai Looi
+That's a great thing to be.
+
+[23:43] Evangeline Wong
+Yeah. If we kind of go back to the prompt concern,
+
+[23:46] Evangeline Wong
+I just like came across my head, but is the fancy
+
+[23:48] Evangeline Wong
+word for what you do like RHLF?
+
+[23:50] Evangeline Wong
+So reinforcement learning through like human feedback?
+
+[23:53] Evangeline Wong
+Is that what you would call it?
+
+[23:55] Mun Wai Looi
+Yes. Again, because again, as I told you, it's like a
+
+[23:58] Mun Wai Looi
+more fancy and more technical version of...
+
+[24:00] Mun Wai Looi
+Better Tester. Yes, but the only thing I can think of
+
+[24:06] Mun Wai Looi
+is... It is not really reinforcement because...
+
+[24:08] Mun Wai Looi
+From my understanding of reinforcement, right?
+
+[24:10] Mun Wai Looi
+It's like you're trying to remunerate it every time you get
+
+[24:13] Mun Wai Looi
+it right. Yes,
+
+[24:14] Aarush Pandey
+that's
+
+[24:14] Evangeline Wong
+the basis. Yeah.
+
+[24:15] Mun Wai Looi
+Yeah. But that's not our objective.
+
+[24:17] Mun Wai Looi
+We try to get it wrong.
+
+[24:19] Mun Wai Looi
+We try to make it fail.
+
+[24:20] Mun Wai Looi
+AI will always try to get it right because that's what
+
+[24:22] Mun Wai Looi
+the models are built for.
+
+[24:24] Mun Wai Looi
+You try to make it as correct as possible.
+
+[24:26] Mun Wai Looi
+Yeah. But we try to breach that.
+
+[24:29] Mun Wai Looi
+We try to breach
+
+[24:31] Mun Wai Looi
+We try to, you know,
+
+[24:33] Mun Wai Looi
+stump it. try to make it fail in a certain task
+
+[24:35] Mun Wai Looi
+or certain processing. So I wouldn't completely say it's
+
+[24:39] Mun Wai Looi
+reinforcement,
+
+[24:40] Aarush Pandey
+but more so remodeling or reshaping.
+
+[24:43] Aarush Pandey
+Yeah. It's like reinforcement through like negative.
+
+[24:46] Aarush Pandey
+Yeah. Negative. Bad reinforcement.
+
+[24:48] Aarush Pandey
+reverse reinforcement. Yeah.
+
+[24:49] Mun Wai Looi
+Yeah. Yeah. It's like what?
+
+[24:51] Mun Wai Looi
+Yeah. Yeah, exactly. It's just you try to correct it every
+
+[24:54] Mun Wai Looi
+time it fails. So yeah.
+
+[24:56] Evangeline Wong
+Yeah. So do you just like you want it to fail?
+
+[24:59] Evangeline Wong
+Yeah. Literally want it to be like not being able to
+
+[25:02] Evangeline Wong
+Yeah. Yeah. Like you
+
+[25:03] Aarush Pandey
+want to see what would make it fail so that the
+
+[25:05] Aarush Pandey
+companies can go and prevent that.
+
+[25:07] Mun Wai Looi
+It's like, it's like if you look at it another way,
+
+[25:09] Mun Wai Looi
+like let's move away from AI right now.
+
+[25:10] Mun Wai Looi
+Let's look at coding.
+
+[25:11] Mun Wai Looi
+Right. There are like, like hackers, you know, hackers that work
+
+[25:14] Mun Wai Looi
+for companies that try to hack into the company's mainframe.
+
+[25:18] Mun Wai Looi
+Red teaming. Yeah. Red teaming.
+
+[25:19] Mun Wai Looi
+We
+
+[25:19] Evangeline Wong
+mentioned this on a previous episode
+
+[25:21] Mun Wai Looi
+as well. Yeah. Red teaming.
+
+[25:22] Mun Wai Looi
+Or red, I heard I say what?
+
+[25:24] Mun Wai Looi
+Red hat hacker or something.
+
+[25:26] Mun Wai Looi
+But something like that is like red teaming.
+
+[25:27] Mun Wai Looi
+Yeah. You try to breach it.
+
+[25:29] Mun Wai Looi
+You try to make it fail.
+
+[25:31] Mun Wai Looi
+And after failing, we will try to look at what, what
+
+[25:34] Mun Wai Looi
+are the potential causes in the prompt.
+
+[25:36] Mun Wai Looi
+Sometimes it can be the prompt itself.
+
+[25:37] Mun Wai Looi
+Might not be the AI model.
+
+[25:38] Mun Wai Looi
+Yeah. But if it's the AI model, then we will have
+
+[25:40] Mun Wai Looi
+to say, all right, how can we improve this?
+
+[25:42] Mun Wai Looi
+And here's where our, you know, rankings and feedbacks and
+
+[25:45] Mun Wai Looi
+documentation just going to help the engineer and AI to improve.
+
+[25:49] Mun Wai Looi
+Yeah. Awesome.
+
+[25:50] Evangeline Wong
+Wow. That's so cool.
+
+[25:50] Evangeline Wong
+This is just like the AI take of red teaming.
+
+[25:53] Evangeline Wong
+Yeah. It's red teaming with AI.
+
+[25:55] Evangeline Wong
+Yeah. That's sick. That's crazy.
+
+[25:57] Evangeline Wong
+And so do you know like what companies go, Do use
+
+[26:01] Evangeline Wong
+your data?
+
+[26:02] Evangeline Wong
+Or is that kind of, you know, it stops there?
+
+[26:05] Evangeline Wong
+Honestly, I don't really look into that.
+
+[26:06] Mun Wai Looi
+For me, it's just like, oh, AI, interesting.
+
+[26:08] Mun Wai Looi
+Oh, I can really teach
+
+[26:09] Aarush Pandey
+AI, that's interesting, so why not, you know?
+
+[26:12] Aarush Pandey
+Yeah,
+
+[26:13] Aarush Pandey
+that's awesome. Is that kind of like abstracted away from you?
+
+[26:15] Aarush Pandey
+Like, do you get to see where the data is going?
+
+[26:20] Aarush Pandey
+Or does it just kind of...?
+
+[26:21] Mun Wai Looi
+They did mention that, like, again, like, generally speaking, they
+
+[26:25] Mun Wai Looi
+say these are extracted and will be given to open source
+
+[26:29] Mun Wai Looi
+AI. Sure.
+
+[26:30] Aarush Pandey
+Yeah, okay.
+
+[26:31] Mun Wai Looi
+So yeah, that's all I know, honestly.
+
+[26:33] Mun Wai Looi
+Yeah. yeah.
+
+[26:34] Aarush Pandey
+Which is
+
+[26:34] Evangeline Wong
+fair. And how many, like, projects have you done?
+
+[26:37] Evangeline Wong
+Like, if you can, like, quickly, like, think back and count.
+
+[26:42] Mun Wai Looi
+I would say, like, probably seven?
+
+[26:46] Mun Wai Looi
+No, not seven. Like, 60 -ish.
+
+[26:47] Mun Wai Looi
+Wow. 60 -ish. Yeah.
+
+[26:49] Aarush Pandey
+That's a lot. That's
+
+[26:50] Mun Wai Looi
+crazy. Oh my goodness.
+
+[26:52] Mun Wai Looi
+Yeah, I mean, that time, because when I got in, it
+
+[26:54] Mun Wai Looi
+was still early phase, honestly.
+
+[26:56] Mun Wai Looi
+Like, not many people know about Outlier AI.
+
+[27:00] Mun Wai Looi
+I saw it prompt up on my LinkedIn.
+
+[27:01] Mun Wai Looi
+was like, oh, interesting.
+
+[27:02] Mun Wai Looi
+Interesting, you know? And I look at the JD, like, the
+
+[27:05] Mun Wai Looi
+job description.
+
+[27:06] Mun Wai Looi
+And I was like, okay.
+
+[27:08] Mun Wai Looi
+Why not? You That's so
+
+[27:09] Aarush Pandey
+cool. Yeah. That's awesome.
+
+[27:11] Aarush Pandey
+Yeah.
+
+[27:11] Evangeline Wong
+It's such a great prospect for uni students who, like, have
+
+[27:13] Evangeline Wong
+recently graduated. We have knowledge, but, like, we want to be
+
+[27:16] Evangeline Wong
+able to apply it somewhere.
+
+[27:17] Evangeline Wong
+Right? So this is actually, this is a great domain.
+
+[27:20] Mun Wai Looi
+Yeah. And I feel like a lot of people tend to
+
+[27:22] Mun Wai Looi
+have, I won't say imposter syndrome, but I would say they
+
+[27:25] Mun Wai Looi
+tend to doubt themselves a lot.
+
+[27:27] Mun Wai Looi
+Yeah. I get that.
+
+[27:27] Mun Wai Looi
+I mean, I feel like, you know, everyone's still struggling in
+
+[27:31] Mun Wai Looi
+that in some ways.
+
+[27:31] Mun Wai Looi
+But I believe, like, you know, taking the first step is
+
+[27:35] Mun Wai Looi
+what overcomes that imposter syndrome, you know, self -doubt in your
+
+[27:39] Mun Wai Looi
+capabilities. Yeah. So, and there's no repercussion anyway, because
+
+[27:42] Mun Wai Looi
+in the end, they don't pay you, because in the end,
+
+[27:44] Mun Wai Looi
+they will test you on your aptitudes on how you would
+
+[27:47] Mun Wai Looi
+handle the project. Yeah.
+
+[27:48] Mun Wai Looi
+So there's no repercussion.
+
+[27:49] Mun Wai Looi
+So why not, you know?
+
+[27:50] Mun Wai Looi
+And if you get into a project, if you get the
+
+[27:52] Mun Wai Looi
+project, well, good job.
+
+[27:53] Aarush Pandey
+Yeah.
+
+[27:54] Mun Wai Looi
+Yeah. Yeah. And it's a skill building thing.
+
+[27:56] Mun Wai Looi
+It's a knowledge building thing.
+
+[27:57] Mun Wai Looi
+And it's also can, you know, be a good side hustle.
+
+[28:00] Mun Wai Looi
+I
+
+[28:00] Evangeline Wong
+guess we've covered so much.
+
+[28:02] Evangeline Wong
+feel like literally today I learned what an AI prompt consultant
+
+[28:05] Evangeline Wong
+is, which is really cool.
+
+[28:06] Evangeline Wong
+learned about Outlier AI and how your job is.
+
+[28:09] Evangeline Wong
+Job descriptions, literally, we are going to fail the AI.
+
+[28:12] Evangeline Wong
+That's literally, we can sum it up in one sentence.
+
+[28:15] Evangeline Wong
+feel
+
+[28:15] Mun Wai Looi
+like, you know what?
+
+[28:17] Mun Wai Looi
+Let's point that there.
+
+[28:18] Mun Wai Looi
+I feel like that's going to be the company's actual model.
+
+[28:20] Mun Wai Looi
+Let's fail the AI.
+
+[28:22] Mun Wai Looi
+That's their tagline. Yeah, that's the tagline.
+
+[28:24] Mun Wai Looi
+Let's pray on its downfall.
+
+[28:27] Mun Wai Looi
+Oh my gosh. Q1 first, let's go.
+
+[28:30] Evangeline Wong
+Is there anything else you can think of that you would
+
+[28:33] Evangeline Wong
+like to share that's about AI, your journey, anything about what's
+
+[28:37] Evangeline Wong
+been happening?
+
+[28:38] Mun Wai Looi
+All right. mean,
+
+[28:39] Mun Wai Looi
+generally, I think currently, I look at it as having a
+
+[28:44] Mun Wai Looi
+promising future. Anyone who gets into AI or anyone who's using
+
+[28:47] Mun Wai Looi
+AI will have a promising future because, again, it helps make
+
+[28:52] Mun Wai Looi
+your life more effective, more efficient in anything you do.
+
+[28:56] Mun Wai Looi
+And again, AI is just automation.
+
+[28:58] Mun Wai Looi
+Automation and processing. And internal processing and generation.
+
+[29:03] Aarush Pandey
+That's another thing we were hoping to discuss was like, currently,
+
+[29:06] Aarush Pandey
+you're in the freelancing space, right?
+
+[29:08] Aarush Pandey
+Yeah. Yeah. Is there a way to kind of do something
+
+[29:11] Aarush Pandey
+like this full time, potentially?
+
+[29:12] Aarush Pandey
+Is there like a thing you could transition?
+
+[29:13] Mun Wai Looi
+I mean, honestly, I think there is.
+
+[29:16] Mun Wai Looi
+I mean, if you look at, I don't know, like Amazon,
+
+[29:20] Mun Wai Looi
+AWS, or IBM, they do hire these like experts.
+
+[29:25] Mun Wai Looi
+Yeah. They've been
+
+[29:26] Aarush Pandey
+hiring a lot of like prompt engineers.
+
+[29:28] Mun Wai Looi
+Exactly. But again, the keyword is experts.
+
+[29:31] Mun Wai Looi
+So the thing is, is because those are not academic anymore.
+
+[29:36] Mun Wai Looi
+Those are more professional and more industrial.
+
+[29:39] Mun Wai Looi
+Yeah. So people like us who may not have enough, it's
+
+[29:44] Mun Wai Looi
+like not sufficient. I wish I can understand.
+
+[29:47] Mun Wai Looi
+So like, because a lot of us, like we know theory
+
+[29:49] Mun Wai Looi
+pretty well. But when it comes to actual industrial application, we
+
+[29:53] Mun Wai Looi
+may lack unless I don't know, you've somehow started working when
+
+[29:57] Mun Wai Looi
+you're five. Yeah.
+
+[29:58] Mun Wai Looi
+And I don't know.
+
+[29:59] Mun Wai Looi
+I Yeah. Right? So, yeah, I mean, yes, it is a
+
+[30:04] Mun Wai Looi
+full -time position and that's what they call prom engineers,
+
+[30:07] Mun Wai Looi
+actually.
+
+[30:07] Evangeline Wong
+That's actually a really good thing.
+
+[30:08] Evangeline Wong
+For people listening that are not so sure what is prom
+
+[30:11] Evangeline Wong
+engineering, could you explain that in a really high -level
+
+[30:15] Aarush Pandey
+kind of overview for them?
+
+[30:17] Mun Wai Looi
+Think of it like this way.
+
+[30:19] Mun Wai Looi
+Prom engineering is like how you work and structure your prom
+
+[30:26] Mun Wai Looi
+will dictate the quality of the output.
+
+[30:30] Evangeline Wong
+That's a great one line.
+
+[30:31] Evangeline Wong
+Wow. Yeah. Love it.
+
+[30:32] Evangeline Wong
+Do you have any tips for us as users?
+
+[30:34] Evangeline Wong
+Like, how do I like...
+
+[30:35] Mun Wai Looi
+It's really tough because we have this thing called over -providing
+
+[30:39] Mun Wai Looi
+information in prom. Yeah.
+
+[30:41] Mun Wai Looi
+Okay. And that can actually cause a lot of misinformation or
+
+[30:43] Mun Wai Looi
+information distortion.
+
+[30:45] Evangeline Wong
+Oh. So I can't just like give like a one -page
+
+[30:47] Evangeline Wong
+prompt and just expect it to be really great.
+
+[30:50] Mun Wai Looi
+Okay. Let's just say you finish your class, right?
+
+[30:55] Mun Wai Looi
+And then you have note -taken every single thing in your
+
+[30:57] Mun Wai Looi
+Word document or something.
+
+[31:00] Mun Wai Looi
+You onto the chat GPT.
+
+[31:02] Mun Wai Looi
+And then at the bottom, you'll be like, Oh, I can
+
+[31:04] Mun Wai Looi
+summarize all these notes in however you want.
+
+[31:08] Mun Wai Looi
+I don't know, like in like a dot point or like
+
+[31:12] Mun Wai Looi
+a, I don't know, flashcards.
+
+[31:14] Mun Wai Looi
+Yeah. Yeah. And I think the best way how I did
+
+[31:19] Mun Wai Looi
+it is to be direct.
+
+[31:21] Mun Wai Looi
+Direct. Like, first of all, know what you want first, I
+
+[31:24] Mun Wai Looi
+think. Yeah. Definitely.
+
+[31:25] Evangeline Wong
+Intention is really important.
+
+[31:27] Mun Wai Looi
+I mean, honestly, actually, you know what?
+
+[31:28] Mun Wai Looi
+A better way to look at it, like imagine AI is
+
+[31:31] Mun Wai Looi
+just your really intelligent friend.
+
+[31:33] Mun Wai Looi
+Yeah. And really intelligent and really competent.
+
+[31:36] Mun Wai Looi
+Right? So when you want to ask a friend to write
+
+[31:40] Mun Wai Looi
+to you or make you like a study note, you'd like,
+
+[31:44] Mun Wai Looi
+Hey, I want this to be summarized and I want it
+
+[31:50] Mun Wai Looi
+in flashcard version.
+
+[31:52] Aarush Pandey
+Yeah.
+
+[31:53] Mun Wai Looi
+Do it for me.
+
+[31:54] Mun Wai Looi
+Yeah. I mean, you don't have to write do it for
+
+[31:55] Mun Wai Looi
+me, but you know, and then you just press enter and
+
+[31:57] Mun Wai Looi
+then they were like, okay, cool.
+
+[31:58] Mun Wai Looi
+And then, you know, like, the When they respond, they always
+
+[32:00] Mun Wai Looi
+respond in a conversational manner anyway.
+
+[32:03] Mun Wai Looi
+So like, hey there,
+
+[32:05] Aarush Pandey
+or like, yes, for sure.
+
+[32:06] Aarush Pandey
+I don't know.
+
+[32:06] Evangeline Wong
+I just get happy when I talk to Chatsuneet.
+
+[32:09] Aarush Pandey
+It's almost like your new friend.
+
+[32:10] Aarush Pandey
+I'm like, oh, you love me so much.
+
+[32:12] Aarush Pandey
+I with the new model, it's gotten so much more flattering
+
+[32:14] Aarush Pandey
+as well. You ask it the most basic question, you ask
+
+[32:16] Aarush Pandey
+it 2 plus 2, and it'll be like, wow, that's an
+
+[32:19] Aarush Pandey
+excellent math question. Let me answer that for you.
+
+[32:21] Aarush Pandey
+Wow, great consideration. I know, like, wow,
+
+[32:24] Evangeline Wong
+thank you. No, it's so
+
+[32:26] Mun Wai Looi
+funny. Yeah, again, like this is a user interaction and that's,
+
+[32:30] Mun Wai Looi
+which goes back to the point that I say, why psychology
+
+[32:32] Mun Wai Looi
+applies heavily into this.
+
+[32:34] Mun Wai Looi
+Because again, there's a lot of behaviours.
+
+[32:35] Mun Wai Looi
+A lot of human behaviours are being collected
+
+[32:39] Aarush Pandey
+and
+
+[32:40] Mun Wai Looi
+for training the data models and other AI models and stuff
+
+[32:43] Mun Wai Looi
+like that. And behaviours are what makes the AI more human
+
+[32:48] Mun Wai Looi
+the next time we use them.
+
+[32:49] Evangeline Wong
+It was so great to kind of just talk to you
+
+[32:51] Evangeline Wong
+and like see literally like, I guess, coming from that psych
+
+[32:54] Evangeline Wong
+background and like what an AI problem consultant does.
+
+[32:57] Evangeline Wong
+And yeah, it was just, it was such a pleasure to
+
+[32:59] Evangeline Wong
+meet you today. Oh,
+
+[33:00] Mun Wai Looi
+thank you. Thank you.
+
+[33:00] Mun Wai Looi
+mean, it was, thanks for having me here actually.
+
+[33:03] Evangeline Wong
+it was awesome. Pretty cool.
+
+[33:04] Evangeline Wong
+To talk about, literally, yeah, in Monash.
+
+[33:06] Evangeline Wong
+Yeah. And which uni did you go to?
+
+[33:08] Evangeline Wong
+Sorry.
+
+[33:09] Mun Wai Looi
+I'm sorry. Actually, no, I'm not sorry.
+
+[33:11] Mun Wai Looi
+No, I'm RMIT. Let's go.
+
+[33:13] Mun Wai Looi
+went away with pride.
+
+[33:14] Mun Wai Looi
+Yes. Wait, no, no, no.
+
+[33:16] Mun Wai Looi
+What am I sorry about?
+
+[33:17] Mun Wai Looi
+awesome. RMIT.
+
+[33:19] Evangeline Wong
+For everyone listening from RMIT.
+
+[33:20] Evangeline Wong
+Exactly. Yeah, you're a knife.
+
+[33:22] Evangeline Wong
+That's sick. So yeah, from the bottom of our hearts at
+
+[33:25] Evangeline Wong
+AI Unplugged, thank you so much for coming today.
+
+[33:27] Evangeline Wong
+Thank you for having me.
+
+[33:28] Evangeline Wong
+It was great to have you.
+
+[33:29] Evangeline Wong
+And for everyone listening.
+
+[33:30] Evangeline Wong
+Yeah. I hope that you guys enjoyed our conversation with Mun Wai
+
+[33:33] Evangeline Wong
+today. And I'm sure you guys learned a lot about an
+
+[33:36] Evangeline Wong
+AI prompt consultant and outlier AI and all these new terms
+
+[33:39] Evangeline Wong
+like prompt consulting. So thank you so much.
+
+[33:41] Evangeline Wong
+It was really insightful.
+
+[33:42] Mun Wai Looi
+All right. Thank you.
+
+[33:43] Evangeline Wong
+All right. So stay tuned for the rest of our episodes
+
+[33:45] Evangeline Wong
+and everything that's coming on AI Unplugged.
+
+[33:49] Aarush Pandey
+Yeah. And don't forget to follow our socials and join our
+
+[33:51] Aarush Pandey
+neural network. Awesome.
+
+[33:54] Aarush Pandey
+Bye.

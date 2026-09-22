@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.DS_Store
+.vercel/
+work/
+.env*
+!.env.example
+
+# Local QA output and tool caches, never published
+quality/
+.impeccable/
+.claude/
+*.log
+
+# Private handover notes, and material that must not be redistributed
+notes/
+vendor/react-bits/*-JS-CSS.json
+public/fonts/mun-wai-assembly.ttf

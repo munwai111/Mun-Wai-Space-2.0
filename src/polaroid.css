@@ -1,0 +1,207 @@
+.world-content {
+  min-height: 540px;
+}
+.polaroid-scene {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 540px;
+  padding: 65px 40px 60px;
+  perspective: 1100px;
+  background-image: radial-gradient(
+    color-mix(in srgb, var(--world-ink) 13%, transparent) 0.7px,
+    transparent 0.7px
+  );
+  background-size: 20px 20px;
+}
+.polaroid-archive-label,
+.polaroid-hint {
+  position: absolute;
+  left: 40px;
+  right: 30px;
+  font-size: 9px;
+  letter-spacing: 1.6px;
+}
+.polaroid-archive-label {
+  top: 28px;
+}
+.polaroid-hint {
+  bottom: 22px;
+  letter-spacing: 0;
+  font-size: 11px;
+}
+.polaroid-float {
+  width: 100%;
+  max-width: 390px;
+  animation: polaroid-drift 9s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  transform-style: preserve-3d;
+}
+.polaroid-scene[data-floating="false"] .polaroid-float {
+  animation-play-state: paused;
+}
+.polaroid-tilt {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 0.86;
+  transform-style: preserve-3d;
+}
+.polaroid-tilt::before {
+  content: "";
+  position: absolute;
+  inset: 8px 3px -5px;
+  background: #eee9df;
+  transform: rotate(3deg) translateZ(-3px);
+  box-shadow: 0 12px 24px #171b1612;
+}
+.polaroid-print {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 12px 0;
+  background: #fffdf6;
+  color: #343c34;
+  box-shadow:
+    0 18px 30px -15px #13281e55,
+    0 2px 4px #13281e15;
+  transform-origin: 50% 65%;
+  backface-visibility: hidden;
+}
+.polaroid-print img {
+  display: block;
+  width: 100%;
+  height: 0;
+  flex: 1 1 0;
+  min-height: 0;
+  object-fit: contain;
+  background: #e7e5de;
+  border-radius: 0;
+}
+.polaroid-print figcaption {
+  min-height: 69px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 4px;
+}
+.polaroid-print figcaption span {
+  font-size: 9px;
+  letter-spacing: 1.3px;
+}
+.polaroid-print figcaption strong {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+.polaroid-concept {
+  flex: 1;
+  background: #dceae1;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.polaroid-concept small {
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+.polaroid-concept strong {
+  font-family: "Mun Wai Assembly", sans-serif;
+  font-size: clamp(25px, 3vw, 40px);
+  line-height: 1.1;
+  font-weight: 400;
+}
+.polaroid-concept span {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.world-carousel-controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 30px;
+  border-top: 1px solid color-mix(in srgb, var(--world-ink) 18%, transparent);
+}
+.world-counter {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.world-counter > span {
+  font-size: 11px;
+}
+.world-carousel-buttons {
+  display: flex;
+  gap: 6px;
+}
+.world-carousel-buttons button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid color-mix(in srgb, var(--world-ink) 35%, transparent);
+  color: inherit;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition:
+    transform 0.16s,
+    background 0.16s;
+}
+.world-carousel-buttons button:hover {
+  background: color-mix(in srgb, var(--world-ink) 8%, transparent);
+}
+.world-carousel-buttons button:active {
+  transform: scale(0.95);
+}
+.world-carousel-buttons .world-autoplay {
+  border-radius: 24px;
+  padding-inline: 14px;
+  font-size: 11px;
+}
+.world-carousel-buttons button:disabled {
+  cursor: default;
+}
+@keyframes polaroid-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 3px, 0) rotate(-0.5deg);
+  }
+  50% {
+    transform: translate3d(3px, -7px, 0) rotate(0.6deg);
+  }
+}
+@media (max-width: 800px) {
+  .world-content {
+    min-height: 0;
+  }
+  .polaroid-scene {
+    min-height: 0;
+    padding: 62px 38px 56px;
+  }
+  .polaroid-float {
+    max-width: 355px;
+  }
+  .world-carousel-controls {
+    padding: 16px 22px;
+    flex-wrap: wrap;
+  }
+  .world-counter {
+    gap: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .polaroid-float {
+    animation: none;
+  }
+}

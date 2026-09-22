@@ -1,0 +1,18 @@
+Mun Wai Space™
+Copyright © 2026 Looi Mun Wai. All rights reserved.
+
+"Mun Wai Space" and the Mun Wai Space wordmark are trademarks of Looi Mun Wai.
+
+This repository is published so the site, and the way it was built, can be
+read and verified. It is not open source. Unless a file says otherwise, the
+writing, photographs, design, code and the original "Mun Wai Assembly"
+typeface may not be copied, modified, redistributed or reused without written
+permission from Looi Mun Wai.
+
+Third-party material keeps its own licence or terms and is not covered by the
+notice above. SOURCES.md lists each item and where it came from, and the
+licence texts are kept in licences/ and public/react-bits-LICENSE.txt. This
+includes the React Bits components (MIT + Commons Clause), GSAP, and the
+Manrope and Roboto Flex typefaces (SIL Open Font License 1.1). Recordings,
+photographs and marks belonging to other people and organisations remain
+theirs.

@@ -1,0 +1,9 @@
+Mun Wai Assembly
+Original generated display font for Mun Wai Space, 2026.
+
+No third-party font outlines were used. The generation source is included in
+generate-font.py. Mun Wai may use, modify, regenerate and distribute this asset
+with his projects. No attribution requirement is imposed by this delivery.
+
+Coverage: A-Z; a-z mapped to uppercase; digits 0-9; @; space; period; hyphen.
+This is a display alphabet. Use the bundled text family for other characters.

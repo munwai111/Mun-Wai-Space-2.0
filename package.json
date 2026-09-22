@@ -1,0 +1,29 @@
+{
+  "name": "mun-wai-space",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.js",
+    "test:podcast:browser": "node tests/podcast-browser.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "gsap": "^3.15.0",
+    "motion": "^12.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@axe-core/cli": "^4.10.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "lighthouse": "^13.4.1",
+    "prettier": "^3.9.6",
+    "puppeteer-core": "25.10.0",
+    "vite": "^7.0.0"
+  }
+}

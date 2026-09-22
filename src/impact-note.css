@@ -1,0 +1,401 @@
+.degree-link {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 3px;
+  margin: 0;
+  font: inherit;
+  color: var(--ink);
+  line-height: inherit;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.degree-link svg {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 13px;
+  overflow: visible;
+  pointer-events: none;
+}
+.degree-link path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.66;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+}
+.degree-link:hover path,
+.degree-link:focus-visible path {
+  opacity: 1;
+  animation: degree-underline 0.72s cubic-bezier(0.32, 0.05, 0.2, 1) both;
+}
+.degree-link:hover {
+  color: var(--ink);
+}
+.degree-link:focus-visible {
+  outline-offset: 7px;
+}
+.hero-belief {
+  display: block;
+  margin-top: 12px;
+  color: var(--ink);
+}
+@keyframes degree-underline {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.impact-note {
+  width: min(980px, calc(100% - 44px));
+  max-height: min(90dvh, 920px);
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 30px 100px -30px #081c2a40;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+.impact-note[open] {
+  animation: impact-arrive 0.38s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.impact-note::backdrop {
+  background: rgb(238 242 235 / 86%);
+  backdrop-filter: blur(15px) saturate(0.45);
+  -webkit-backdrop-filter: blur(15px) saturate(0.45);
+}
+html[data-theme="dark"] .impact-note::backdrop {
+  background: rgb(3 12 9 / 89%);
+}
+.impact-note[open]::backdrop {
+  animation: impact-veil 0.35s ease-out both;
+}
+.impact-note[data-phase="closing"] {
+  animation: impact-leave 0.22s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.impact-note[data-phase="closing"]::backdrop {
+  animation: impact-veil 0.22s ease-out reverse both;
+}
+.impact-topline {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 13px 22px 13px 36px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+.impact-topline > span {
+  font-size: 9px;
+  letter-spacing: 1.6px;
+}
+.impact-close {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  transition:
+    transform 0.2s,
+    background 0.2s;
+  flex-shrink: 0;
+}
+.impact-close:hover {
+  background: var(--surface);
+  transform: rotate(8deg);
+}
+.impact-close:active {
+  transform: scale(0.94);
+}
+.impact-content {
+  padding: 32px 42px 28px;
+}
+.impact-origin {
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  margin-bottom: 14px;
+  color: var(--muted);
+}
+.impact-content h2 {
+  font-size: clamp(31px, 4vw, 49px);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+}
+.impact-definition {
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 22px 0 28px;
+}
+.impact-columns {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 38px;
+  align-items: start;
+}
+.impact-section-label {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+.impact-work-list {
+  display: grid;
+}
+.impact-work-list button {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  text-align: left;
+  padding: 17px 12px;
+  min-height: 74px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  transition:
+    background 0.2s,
+    color 0.2s;
+  font-size: 12px;
+}
+.impact-work-list button > svg {
+  margin-left: auto;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.impact-work-list button strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.impact-work-list button small {
+  display: block;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 3px;
+}
+.impact-work-number {
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+}
+.impact-work-list button[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: transparent;
+}
+.impact-work-list button:hover:not([aria-pressed="true"]) {
+  background: var(--surface);
+  color: var(--ink);
+}
+.impact-work-list button:hover > svg {
+  transform: translateX(3px);
+}
+.impact-work-detail {
+  min-width: 0;
+  min-height: 415px;
+  border-top: 2px solid var(--ink);
+  padding-top: 17px;
+}
+.impact-role {
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin: 0 0 12px;
+}
+.impact-work-detail h3 {
+  font-size: 22px;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+.impact-work-copy {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-top: 14px;
+}
+.impact-result {
+  border-left: 2px solid var(--ink);
+  padding-left: 15px;
+  margin-top: 22px;
+}
+.impact-result > span {
+  display: block;
+  font-size: 8px;
+  line-height: 1.6;
+  letter-spacing: 1.4px;
+  color: var(--muted);
+}
+.impact-result > strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+.impact-result > p {
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.impact-evidence-link {
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 14px;
+  padding: 4px 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.impact-evidence-link svg {
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.impact-evidence-link:hover svg {
+  transform: translateX(4px);
+}
+.impact-decision {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  margin-top: 25px;
+}
+.impact-decision > span {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+}
+.impact-decision p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 7px;
+}
+.impact-decision p > span {
+  padding: 0 9px;
+  color: var(--muted);
+}
+.impact-context {
+  margin-top: 15px;
+  border-top: 1px solid var(--line);
+}
+.impact-context summary {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.impact-context summary:hover,
+.impact-context[open] summary {
+  color: var(--ink);
+}
+.impact-context p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 720px;
+  margin: 0 0 12px;
+}
+html.impact-open .site-header *,
+html.impact-open .polaroid-float {
+  animation-play-state: paused !important;
+}
+@keyframes impact-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes impact-leave {
+  to {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+}
+@keyframes impact-veil {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 640px) {
+  .impact-note {
+    width: calc(100% - 20px);
+    max-height: 94dvh;
+  }
+  .impact-topline {
+    padding: 10px 12px 10px 22px;
+  }
+  .impact-topline > span {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .impact-content {
+    padding: 25px 23px;
+  }
+  .impact-columns {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .impact-definition {
+    font-size: 15px;
+  }
+  .impact-work-detail {
+    min-height: 0;
+  }
+  .impact-work-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+  }
+  .impact-work-list button {
+    padding: 12px 9px;
+    min-height: 86px;
+    align-items: flex-start;
+    gap: 7px;
+  }
+  .impact-work-list button > svg {
+    display: none;
+  }
+  .impact-work-list button strong {
+    font-size: 12px;
+  }
+  .impact-work-list button small {
+    font-size: 10px;
+  }
+  .impact-work-number {
+    padding-top: 3px;
+  }
+  .impact-decision p > span {
+    padding: 0 4px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .impact-note[open],
+  .impact-note::backdrop,
+  .degree-link path {
+    animation: none !important;
+  }
+}

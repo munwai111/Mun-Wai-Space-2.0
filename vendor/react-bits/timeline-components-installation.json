@@ -1,0 +1,98 @@
+{
+  "installedOn": "2026-09-15",
+  "cli": "shadcn 4.21.0",
+  "command": "npx --yes shadcn@latest add @react-bits/ScrollReveal-JS-CSS @react-bits/MaskedHeading-JS-CSS @react-bits/VariableProximity-JS-CSS --yes --cwd work/scroll-expand-install",
+  "cliResult": "Succeeded; six files created in the staging project.",
+  "appDependencyChanges": [
+    {
+      "name": "gsap",
+      "version": "3.15.0",
+      "declared": "^3.15.0",
+      "requested": "^3.13.0"
+    }
+  ],
+  "satisfiedExistingDependencies": [
+    {
+      "name": "motion",
+      "version": "12.43.0",
+      "requested": "^12.23.12"
+    }
+  ],
+  "components": [
+    {
+      "component": "@react-bits/ScrollReveal-JS-CSS",
+      "registryUrl": "https://reactbits.dev/r/ScrollReveal-JS-CSS.json",
+      "snapshotSha256": "ed47e549c90da2743374adf50084aba0b5897964d46c15169c45cb45578434ae",
+      "dependencies": ["gsap@^3.13.0"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "file": "src/ScrollReveal.css",
+          "registryBytes": 177,
+          "cliBytes": 177,
+          "cliMatchesRegistryExactly": true,
+          "registrySha256": "b16de51475c3214ba7c11dc7a8c42f4ccd8436701b3e5d60c01489a663f05938",
+          "cliSha256": "b16de51475c3214ba7c11dc7a8c42f4ccd8436701b3e5d60c01489a663f05938"
+        },
+        {
+          "file": "src/ScrollReveal.jsx",
+          "registryBytes": 2561,
+          "cliBytes": 2403,
+          "cliMatchesRegistryExactly": false,
+          "registrySha256": "58102dd5392d00f0eb00902c827858beff240c147926c6c2f8ff4619061099c3",
+          "cliSha256": "0f981e65414d83d54f8fdfb54ffe7f0e31b963f7452c2c6e994714e90e72cae5"
+        }
+      ]
+    },
+    {
+      "component": "@react-bits/MaskedHeading-JS-CSS",
+      "registryUrl": "https://reactbits.dev/r/MaskedHeading-JS-CSS.json",
+      "snapshotSha256": "d30c2b2253094abb96fd8de668172c7c243634877709a85c6b76c1185184b084",
+      "dependencies": ["gsap@^3.13.0"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "file": "src/MaskedHeading.css",
+          "registryBytes": 956,
+          "cliBytes": 956,
+          "cliMatchesRegistryExactly": true,
+          "registrySha256": "50fa110a5d7afea828e7b4fa5df49affd8b24c7b012e54fd4d8768ccd0d3ddd1",
+          "cliSha256": "50fa110a5d7afea828e7b4fa5df49affd8b24c7b012e54fd4d8768ccd0d3ddd1"
+        },
+        {
+          "file": "src/MaskedHeading.jsx",
+          "registryBytes": 9149,
+          "cliBytes": 9175,
+          "cliMatchesRegistryExactly": false,
+          "registrySha256": "96cb22333d986a31d887ec35ddb0f0b83c8bef6e23037312b4e870daaf1b6380",
+          "cliSha256": "c8dba3470347458f9916dae00f9c58dc0e18738995514a424b7579978494f20c"
+        }
+      ]
+    },
+    {
+      "component": "@react-bits/VariableProximity-JS-CSS",
+      "registryUrl": "https://reactbits.dev/r/VariableProximity-JS-CSS.json",
+      "snapshotSha256": "512644b2b071dcb6af7d1849c1dfc992113ab991f96c82848b841bc3c4d5f355",
+      "dependencies": ["motion@^12.23.12"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "file": "src/VariableProximity.css",
+          "registryBytes": 353,
+          "cliBytes": 353,
+          "cliMatchesRegistryExactly": true,
+          "registrySha256": "52a8317f04f37c18ec9a3652a0c49efa8731d5a2f69b257fecca7e4de641f670",
+          "cliSha256": "52a8317f04f37c18ec9a3652a0c49efa8731d5a2f69b257fecca7e4de641f670"
+        },
+        {
+          "file": "src/VariableProximity.jsx",
+          "registryBytes": 5557,
+          "cliBytes": 5506,
+          "cliMatchesRegistryExactly": false,
+          "registrySha256": "0a536fb12c569acc51dfe6bbe8355632d6b5519d569c4ba778f4e1ad18b67fe5",
+          "cliSha256": "2b3fbfd25a9178b9567518fc82bbd516b8806e94200e4eeb729b13c32811c6a1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+/* Writing follows the reading order; the complete text always occupies space. */
+.ink-writing {
+  position: relative;
+  font-kerning: none;
+  font-variant-ligatures: none;
+}
+.ink-writing[data-phase="waiting"] > [aria-hidden="true"] {
+  visibility: hidden;
+}
+.ink-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+.ink-letter {
+  display: inline-block;
+  position: relative;
+}
+.ink-glyph {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: visible;
+  pointer-events: none;
+  animation: ink-settle 0.1s linear var(--glyph-end) both;
+}
+.ink-glyph text {
+  letter-spacing: 0;
+  font-kerning: none;
+  font-variant-ligatures: none;
+}
+.ink-stroke {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: ink-stroke var(--stroke-duration) cubic-bezier(0.37, 0, 0.55, 1)
+    var(--stroke-delay) both;
+}
+.ink-writing[data-phase="drawing"] .ink-native {
+  animation: ink-type 0.1s linear var(--glyph-end) both;
+}
+.ink-typewriter[data-phase="drawing"] .ink-native {
+  animation: ink-type 0.1s steps(1, start) var(--ink-delay) both;
+}
+@keyframes ink-stroke {
+  from {
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+@keyframes ink-settle {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes ink-type {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Small, tactile details in the navigation. */
+.wordmark-square {
+  animation: identity-turn 9s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+.desktop-nav a > span {
+  display: inline-block;
+  animation: nav-breathe 7s ease-in-out var(--nav-delay, 0s) infinite;
+}
+.desktop-nav a {
+  transition:
+    transform 0.25s var(--ease),
+    color 0.25s;
+}
+.desktop-nav a:hover,
+.desktop-nav a:focus-visible {
+  transform: translateY(-2px);
+}
+.desktop-nav a:hover > span,
+.desktop-nav a:focus-visible > span {
+  animation-play-state: paused;
+}
+.desktop-nav a:active {
+  transform: translateY(0) scale(0.96);
+}
+.theme-button svg {
+  animation: nav-breathe 8s ease-in-out -2s infinite;
+}
+.theme-button:hover svg {
+  transform: rotate(-15deg);
+  animation: none;
+}
+.theme-button {
+  transition: transform 0.25s;
+}
+.theme-button:active {
+  transform: scale(0.9);
+}
+.nav-contact {
+  border: 1px solid var(--accent-ink);
+  border-radius: 5px 17px 5px 17px;
+  box-shadow: 0 3px 0 var(--accent-ink);
+  gap: 18px;
+  padding: 7px 9px 7px 16px;
+  transition:
+    transform 0.25s var(--ease),
+    box-shadow 0.25s;
+}
+.nav-contact .hello-arrow {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--accent-ink) 35%, transparent);
+  border-radius: 50%;
+  animation: hello-breathe 6s ease-in-out infinite;
+}
+.nav-contact:hover {
+  transform: translateY(-2px) rotate(-1deg);
+  box-shadow: 0 5px 0 var(--accent-ink);
+}
+.nav-contact:hover svg {
+  transform: rotate(45deg);
+}
+.nav-contact svg {
+  transition: transform 0.3s var(--ease);
+}
+.nav-contact:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--accent-ink);
+}
+@keyframes identity-turn {
+  0%,
+  35%,
+  100% {
+    transform: rotate(0) scale(1);
+    border-radius: 2px;
+  }
+  52%,
+  65% {
+    transform: rotate(90deg) scale(0.88);
+    border-radius: 50%;
+  }
+  82% {
+    transform: rotate(180deg) scale(1);
+    border-radius: 2px;
+  }
+}
+@keyframes nav-breathe {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.9px);
+  }
+}
+@keyframes hello-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.94);
+  }
+}
+
+/* Organisation journal: a keepsake, a place stamp, and a small metal pin. */
+.world-copy {
+  position: relative;
+}
+.world-copy > .section-label {
+  font-size: 10px;
+}
+.world-copy h3 {
+  margin-top: 20px;
+}
+.journal-marks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  position: relative;
+  width: 100%;
+  margin-top: 22px;
+  padding: 0 18px 18px 0;
+}
+.journal-sticker {
+  display: grid;
+  place-content: center;
+  min-width: 68px;
+  max-width: 116px;
+  min-height: 60px;
+  padding: 10px;
+  background: var(--world-ink);
+  color: var(--world-paper);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.1;
+  border: 3px solid #fffdf6;
+  border-radius: 5px 5px 15px 5px;
+  box-shadow: 2px 3px 0 #18282022;
+  transform: rotate(-7deg);
+  transition: transform 0.4s var(--ease);
+}
+.journal-sticker:hover {
+  transform: rotate(-2deg) translateY(-3px);
+}
+.journal-stamp {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid currentColor;
+  outline: 1px dashed currentColor;
+  outline-offset: 3px;
+  border-radius: 50%;
+  padding: 16px 15px;
+  text-align: center;
+  transform: rotate(5deg);
+  opacity: 0.85;
+}
+.journal-stamp small {
+  font-size: 7px;
+  letter-spacing: 1.2px;
+}
+.journal-stamp strong {
+  font-size: 8px;
+  letter-spacing: 0.5px;
+}
+.journal-pin {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 3px;
+  top: 5px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 32% 26%,
+    #fffee6 0 10%,
+    #d5b56a 22%,
+    #ad7b38 68%,
+    #53381f 100%
+  );
+  box-shadow:
+    2px 5px 3px #17261933,
+    inset 0 0 0 1px #ffffdd99;
+  transform: rotate(-25deg);
+}
+.journal-pin::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: #736c58;
+  left: 7px;
+  top: 13px;
+  z-index: -1;
+}
+.journal-handnote {
+  flex-basis: 100%;
+  font-size: 11px;
+  font-style: italic;
+  transform: rotate(-2deg);
+  margin-top: -2px;
+}
+.world-content {
+  min-height: 660px;
+}
+.neural-brain {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* The opening portrait is now a small album with a stable footprint. */
+.hero-photo-window {
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+  background: #e9ece9;
+}
+.hero-album .hero-photo-window img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-album .hero-photo-window .hero-memory {
+  object-fit: contain;
+}
+.hero-album .portrait figcaption {
+  padding-bottom: 8px;
+}
+.hero-photo-note {
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--muted);
+  padding: 0 8px;
+  min-height: 30px;
+}
+.hero-album-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 4px 3px 8px;
+  gap: 3px;
+}
+.hero-album-controls > span {
+  margin-right: auto;
+  padding-left: 5px;
+  font-size: 9px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.hero-album-controls button {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+}
+.hero-album-controls button:hover {
+  background: var(--surface);
+}
+.hero-album-controls button:active {
+  transform: scale(0.95);
+}
+/* A chapter-led scroll journey. The browser retains its normal scroll behaviour. */
+html[data-page-hidden="true"] .site-header *,
+html.listening-open .site-header * {
+  animation-play-state: paused !important;
+}
+html[data-calm="true"] .ink-writing .ink-letter {
+  clip-path: none;
+  opacity: 1;
+}
+html[data-calm="true"] .ink-writing > [aria-hidden="true"] {
+  visibility: visible;
+}
+html[data-calm="true"] .ink-native {
+  opacity: 1 !important;
+}
+html[data-calm="true"] .ink-glyph {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .hero-photo-window {
+    height: 300px;
+  }
+  .journal-marks {
+    gap: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .world-content {
+    min-height: 0;
+  }
+}
+@media (max-width: 640px) {
+  .hero-photo-window {
+    height: 310px;
+  }
+  .hero-album .portrait {
+    width: min(285px, 85%);
+  }
+  .hero-album-controls button {
+    width: 36px;
+    height: 36px;
+  }
+  .nav-contact {
+    gap: 8px;
+    padding-left: 12px;
+  }
+  .nav-contact .hello-arrow {
+    width: 24px;
+    height: 24px;
+  }
+  .journal-stamp {
+    padding: 13px 10px;
+  }
+  .journal-stamp strong {
+    font-size: 7px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ink-writing > [aria-hidden="true"] {
+    visibility: visible !important;
+  }
+  .ink-writing .ink-letter {
+    clip-path: none;
+    opacity: 1;
+  }
+  .ink-writing .ink-native {
+    opacity: 1 !important;
+  }
+  .ink-writing .ink-glyph {
+    display: none;
+  }
+}
+@media print {
+  .ink-writing > [aria-hidden="true"] {
+    visibility: visible !important;
+  }
+  .ink-writing .ink-letter {
+    clip-path: none;
+    opacity: 1;
+  }
+  .ink-writing .ink-native {
+    opacity: 1 !important;
+  }
+  .ink-writing .ink-glyph {
+    display: none;
+  }
+}

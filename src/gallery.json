@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Graduated with 'WSC All Rounder Award 2021'",
+    "images": ["/images/journey-1-0.webp", "/images/journey-1-1.webp"]
+  },
+  {
+    "id": 2,
+    "title": "RMIT University Malaysian Association - Activity Officer",
+    "images": ["/images/journey-2-0.webp", "/images/journey-2-1.webp"]
+  },
+  {
+    "id": 3,
+    "title": "RMIT Scholarship Recipient",
+    "images": ["/images/journey-3-0.webp", "/images/journey-3-1.webp"]
+  },
+  {
+    "id": 4,
+    "title": "RMIT Activities & Volunteering",
+    "images": ["/images/journey-4-0.webp", "/images/journey-4-1.webp"]
+  },
+  {
+    "id": 5,
+    "title": "Xolvit Winner",
+    "images": ["/images/journey-5-0.webp"]
+  },
+  {
+    "id": 6,
+    "title": "RMIT Badminton Club - Ambassador & Promoter",
+    "images": ["/images/journey-6-0.webp", "/images/journey-6-1.webp"]
+  },
+  {
+    "id": 7,
+    "title": "Kansai Global Exchange",
+    "images": ["/images/journey-7-0.webp", "/images/journey-7-1.webp"]
+  },
+  {
+    "id": 8,
+    "title": "Secondary & Highschool Private Tutor",
+    "images": ["/images/journey-8-0.webp", "/images/journey-8-1.webp"]
+  },
+  {
+    "id": 9,
+    "title": "UNIQLO Global Management Program",
+    "images": ["/images/journey-9-0.webp", "/images/journey-9-1.webp"]
+  },
+  {
+    "id": 10,
+    "title": "RMIT Graduation - Bachelor of Applied Science (Psychology)",
+    "images": ["/images/journey-10-0.webp", "/images/journey-10-1.webp"]
+  },
+  {
+    "id": 11,
+    "title": "RMIT CIAIRI - Research Assistant (Intern), Behavioural & Data Analysis",
+    "images": ["/images/journey-11-0.webp", "/images/journey-11-1.webp"]
+  },
+  {
+    "id": 12,
+    "title": "VTAC Marketing & Communications",
+    "images": ["/images/journey-12-0.webp", "/images/journey-12-1.webp"]
+  },
+  {
+    "id": 13,
+    "title": "Super AI Event",
+    "images": ["/images/journey-13-0.webp", "/images/journey-13-1.webp"]
+  }
+]
