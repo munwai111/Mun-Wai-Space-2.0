@@ -151,7 +151,7 @@
 }
 .journey-photo-wash {
   object-fit: cover;
-  filter: blur(14px) brightness(0.7);
+  filter: blur(14px) brightness(1);
   transform: scale(1.07);
   opacity: 0.7;
 }
@@ -164,7 +164,7 @@
       90deg,
       rgba(5, 23, 18, 0.88) 0%,
       rgba(5, 23, 18, 0.7) 42%,
-      rgba(5, 23, 18, 0.24) 82%
+      rgba(5, 23, 18, 0.2) 82%
     ),
     linear-gradient(0deg, rgba(4, 20, 16, 0.7), transparent 30%);
 }
