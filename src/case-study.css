@@ -528,3 +528,15 @@
     transition: none;
   }
 }
+
+/* When the kind line wraps onto two rows the middot is left dangling. */
+@media (max-width: 560px) {
+  .case-kind {
+    display: grid;
+    justify-items: start;
+    gap: 6px;
+  }
+  .case-kind__sep {
+    display: none;
+  }
+}

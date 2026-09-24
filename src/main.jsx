@@ -374,7 +374,8 @@ function App() {
         <section className="hero section-wrap" id="home">
           <div className="hero-text">
             <p className="eyebrow">
-              Commercial lease negotiation. AI projects of my own.
+              Commercial analysis across 60+ stores. Research across 5,000+
+              records. Systems I build and ship myself.
             </p>
             <h1 className="assembly">
               <Ink>
@@ -384,9 +385,10 @@ function App() {
               </Ink>
             </h1>
             <p className="hero-intro">
-              I'm Mun Wai,{" "}
+              I'm Mun Wai.{" "}
               <ImpactNote calm={motionOff} onExplore={exploreImpactWork} />{" "}
-              Graduate.{" "}
+              taught me to ask what people are actually doing. Commercial work
+              taught me the answer arrives with a deadline and a number attached.{" "}
               <span className="hero-belief">
                 Build with AI. Grow with People. Love Innovation.
               </span>
@@ -495,12 +497,51 @@ function App() {
           <Reveal calm={motionOff}>
             <p className="section-label">SELECTED WORK</p>
             <h2>
-              <Ink>Here’s what I’ve been working on.</Ink>
+              <Ink>
+                Understand how I think. Then see what I’ve executed.
+              </Ink>
             </h2>
             <p className="section-description">
               Each of these began as a question I could not settle by reading
-              about it. Shown as they are, limits attached.
+              about it. Every one is set out the same way: the problem, what I
+              did, the evidence, what was delivered and what actually came of
+              it. Limits included.
             </p>
+          </Reveal>
+          {/* Four areas, each pointed at the work that demonstrates it rather
+              than described as a skill. */}
+          <Reveal calm={motionOff}>
+            <ul className="positioning">
+              {[
+                [
+                  "Psychology and behaviour",
+                  "Benchmarking that found the load was in the comparison, not the volume",
+                  "/projects/vtac/",
+                ],
+                [
+                  "Research and evidence",
+                  "5,000+ Scopus records screened and classified into five categories",
+                  "/projects/ciairi/",
+                ],
+                [
+                  "Data and analytics",
+                  "Behavioural variables, repeated observations, confidence stated with the result",
+                  "/projects/metaxy/",
+                ],
+                [
+                  "Commercial judgement",
+                  "Rent read against performance across a 60+ store network",
+                  "/work/uniqlo/",
+                ],
+              ].map(([area, proof, href]) => (
+                <li key={area}>
+                  <a href={href}>
+                    <strong>{area}</strong>
+                    <span>{proof}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </Reveal>
           <div className="filter-row" role="group" aria-label="Filter projects">
             {["All work", "AI & product", "Research & strategy"].map((f) => (
