@@ -84,6 +84,40 @@ export const cases = {
       "A multi-tiered MVP concept for pathway building and course comparison, designed in Figma and presented to stakeholders.",
     result:
       "A design and research project, delivered and presented. VTAC is not described here as having deployed it.",
+    deliveredOwner: "team",
+    artefacts: {
+      note: "Team output from a three-person project. My contribution was the behavioural benchmarking, the UX research and the interface design. Both files open in Figma without an account.",
+      items: [
+        {
+          title: "Course comparison",
+          body: "Courses sit side by side, and one \u201cview as\u201d switch (domestic ATAR, international ATAR, non-ATAR) changes which entry requirements are shown, so a student reads only the ones that apply to them. Columns can be reordered, and the frames cover adding a course and reading a result.",
+          links: [
+            {
+              label: "Walk the prototype",
+              href: "https://www.figma.com/proto/Vev53yfio5OzPArPveiI1w/Course-Comparison-Prototype?node-id=1-5&starting-point-node-id=1%3A5",
+            },
+            {
+              label: "Open the file",
+              href: "https://www.figma.com/design/Vev53yfio5OzPArPveiI1w/Course-Comparison-Prototype?node-id=0-1",
+            },
+          ],
+        },
+        {
+          title: "Pathway tool",
+          body: "A pathway is built from the student type first, with the differences between the domestic and international routes stated before the options rather than buried inside them. The workflow runs from a pathway list to a viewer, an expanded detail view and a saved set of favourites.",
+          links: [
+            {
+              label: "Walk the prototype",
+              href: "https://www.figma.com/proto/FZeedyCzYtWLZJihcuIsqn/Pathways-Wireframe-Prototype-Workflows?node-id=0-1",
+            },
+            {
+              label: "Open the file",
+              href: "https://www.figma.com/design/FZeedyCzYtWLZJihcuIsqn/Pathways-Wireframe-Prototype-Workflows?node-id=0-1&m=dev",
+            },
+          ],
+        },
+      ],
+    },
     validation: "Presented to stakeholders at VTAC.",
     learning:
       "A useful interface does not always need more information. Sometimes it needs a clearer sequence and a more obvious next decision.",

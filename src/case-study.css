@@ -549,3 +549,62 @@
   line-height: 1.6;
   color: var(--muted);
 }
+
+/* The delivered artefacts, where they can actually be opened. */
+.artefacts {
+  margin-top: 22px;
+  display: grid;
+  gap: 14px;
+}
+.artefact {
+  padding: 18px 20px 16px;
+  border: 1px solid var(--line);
+}
+.artefact h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+.artefact p {
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+  color: var(--muted);
+}
+.artefact__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px !important;
+}
+.artefact__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+  transition:
+    border-color 0.3s var(--ease),
+    background 0.3s var(--ease);
+}
+.artefact__links a:first-child {
+  border-color: var(--ink);
+}
+.artefact__links a:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+.artefact__note {
+  margin: 0 !important;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+  color: var(--muted);
+}

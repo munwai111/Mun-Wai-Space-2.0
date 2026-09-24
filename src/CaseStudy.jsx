@@ -219,8 +219,31 @@ export default function CaseStudy({ record }) {
               </Row>
             )}
 
-            <Row index={next()} label="Delivered" owner="me">
+            <Row index={next()} label="Delivered" owner={c.deliveredOwner || "me"}>
               <p>{c.deliveredDetail}</p>
+              {c.artefacts && (
+                <div className="artefacts">
+                  {c.artefacts.items.map((a) => (
+                    <article key={a.title} className="artefact">
+                      <h3>{a.title}</h3>
+                      <p>{a.body}</p>
+                      <p className="artefact__links">
+                        {a.links.map((l) => (
+                          <a
+                            key={l.href}
+                            href={l.href}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {l.label} <ArrowUpRight size={13} weight="bold" />
+                          </a>
+                        ))}
+                      </p>
+                    </article>
+                  ))}
+                  <p className="artefact__note">{c.artefacts.note}</p>
+                </div>
+              )}
             </Row>
 
             <Row index={next()} label="Result" tone="result">
