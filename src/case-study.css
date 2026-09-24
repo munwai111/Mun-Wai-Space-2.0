@@ -1,0 +1,530 @@
+/* Case-study pages. Editorial column, hairline rules, one accent.
+   The accent is reserved for what I personally did; nothing else uses it. */
+
+.case-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* ---- top bar ---- */
+
+.case-top {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px clamp(16px, 5vw, 64px);
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.case-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+}
+.case-back sup {
+  font-size: 0.55em;
+  vertical-align: super;
+  margin-left: 1px;
+}
+.case-back svg {
+  transition: transform 0.4s var(--ease);
+}
+.case-back:hover svg {
+  transform: translateX(-3px);
+}
+
+.case-theme {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 0.3s var(--ease);
+}
+.case-theme:hover {
+  border-color: var(--ink);
+}
+
+/* ---- shell ---- */
+
+.case-body {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: clamp(40px, 8vw, 96px) clamp(16px, 5vw, 64px) 0;
+}
+
+.case-page main {
+  flex: 1;
+}
+
+/* ---- hero ---- */
+
+.case-kind {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0 0 22px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+}
+.case-kind__sep {
+  opacity: 0.5;
+}
+
+.case-hero h1 {
+  margin: 0;
+  font-size: clamp(38px, 7.2vw, 82px);
+  line-height: 0.97;
+  letter-spacing: -0.05em;
+  max-width: 16ch;
+}
+
+.case-line {
+  margin: 22px 0 0;
+  font-size: clamp(18px, 2.4vw, 25px);
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--muted);
+  max-width: 34ch;
+}
+
+/* the 15-second scan */
+.scan-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 42px 0 0;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+.scan-strip > div {
+  padding: 18px 20px 20px;
+  background: var(--paper);
+}
+.scan-strip dt {
+  margin: 0 0 9px;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.scan-strip dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+.case-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 0;
+}
+.case-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 17px;
+  border: 1px solid var(--ink);
+  border-radius: 100px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+  transition:
+    background 0.3s var(--ease),
+    color 0.3s var(--ease);
+}
+.case-links a:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* ---- stats band ---- */
+
+.case-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px 26px;
+  margin: 64px 0 0;
+  padding: 34px 0 30px;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+.case-stats strong {
+  display: block;
+  font-size: clamp(38px, 5.4vw, 56px);
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+  font-weight: 700;
+}
+.case-stats__unit {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.case-stats__note {
+  display: block;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.case-stats__source {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* ---- the evidence spine ---- */
+
+.case-spine {
+  margin: 0 0 clamp(48px, 8vw, 88px);
+}
+
+.spine-row {
+  display: grid;
+  grid-template-columns: minmax(0, 250px) minmax(0, 1fr);
+  gap: 20px clamp(24px, 5vw, 64px);
+  padding: clamp(30px, 4.5vw, 46px) 0;
+  border-bottom: 1px solid var(--line);
+}
+.spine-row:first-child {
+  border-top: 1px solid var(--line);
+  margin-top: clamp(48px, 7vw, 76px);
+}
+.case-stats + .case-spine .spine-row:first-child {
+  border-top: none;
+  margin-top: 0;
+}
+
+.spine-row__label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  align-self: start;
+  position: sticky;
+  top: 78px;
+}
+
+.spine-row__index {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.spine-row__label h2 {
+  margin: 0;
+  font-size: clamp(19px, 2.3vw, 24px);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+}
+
+.spine-row__owner {
+  padding: 3px 8px 4px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+/* the single accent: what I did myself */
+.spine-row[data-owner="me"] .spine-row__owner {
+  border-color: transparent;
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.spine-row__body p {
+  margin: 0;
+  font-size: clamp(15.5px, 1.7vw, 18px);
+  line-height: 1.58;
+  letter-spacing: -0.012em;
+  max-width: 62ch;
+}
+.spine-row__body p + p,
+.spine-row__body p + .chain,
+.spine-row__body p + .spine-list,
+.spine-row__body p + .flow-grid {
+  margin-top: 20px;
+}
+
+.spine-row[data-tone="result"] .spine-row__body > p:first-child {
+  font-size: clamp(17px, 2vw, 21px);
+  line-height: 1.45;
+  letter-spacing: -0.022em;
+}
+
+.spine-row[data-tone="wider"] {
+  background: var(--surface);
+  padding-left: clamp(14px, 2.4vw, 26px);
+  padding-right: clamp(14px, 2.4vw, 26px);
+  margin-left: clamp(-14px, -2.4vw, -26px);
+  margin-right: clamp(-14px, -2.4vw, -26px);
+}
+
+.spine-aside {
+  color: var(--muted);
+}
+
+.spine-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.spine-list li {
+  padding: 13px 16px;
+  background: var(--paper);
+  font-size: 14px;
+  line-height: 1.45;
+  letter-spacing: -0.012em;
+}
+
+/* interpretation / boundary / confidentiality callouts */
+.spine-interpret,
+.spine-boundary,
+.spine-warning {
+  margin-top: 20px !important;
+  padding: 16px 18px;
+  border-left: 2px solid var(--ink);
+  background: var(--surface);
+  font-size: 14.5px !important;
+  line-height: 1.55 !important;
+}
+.spine-interpret span,
+.spine-boundary span {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.spine-warning {
+  border-left-color: var(--muted);
+  color: var(--muted);
+}
+
+/* ---- reasoning chains ---- */
+
+.chain {
+  border: 1px solid var(--line);
+  padding: 20px 20px 18px;
+}
+.chain__title {
+  margin: 0 0 16px !important;
+  font-size: 9.5px !important;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.chain__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0;
+}
+.chain__list li {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 11px 0;
+  border-top: 1px solid var(--line);
+  font-size: 14.5px;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+}
+.chain__list li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+.chain__num {
+  flex: none;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.chain__note {
+  margin: 16px 0 0 !important;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+  color: var(--muted);
+}
+
+/* ---- recreated workflow diagrams ---- */
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+.flow {
+  margin: 0;
+  padding: 18px 18px 14px;
+  border: 1px solid var(--line);
+}
+.flow figcaption {
+  margin-bottom: 14px;
+}
+.flow__tag {
+  display: inline-block;
+  margin-bottom: 9px;
+  padding: 3px 7px 4px;
+  border: 1px dashed var(--muted);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+}
+.flow h3 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+.flow ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.flow li {
+  display: flex;
+  align-items: baseline;
+  gap: 11px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  font-size: 12.5px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+.flow li span {
+  flex: none;
+  font-size: 9px;
+  font-weight: 800;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- closing ---- */
+
+.case-learning {
+  padding: clamp(34px, 5vw, 56px) 0 clamp(30px, 4vw, 44px);
+  border-top: 1px solid var(--ink);
+}
+.case-learning__label {
+  margin: 0 0 18px;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+}
+.case-learning blockquote {
+  margin: 0;
+  font-size: clamp(21px, 3.4vw, 36px);
+  line-height: 1.22;
+  letter-spacing: -0.04em;
+  max-width: 24ch;
+}
+
+.case-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 clamp(40px, 6vw, 64px);
+}
+.case-stack span {
+  padding: 6px 12px 7px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+}
+
+.case-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 26px clamp(16px, 5vw, 64px) 34px;
+  border-top: 1px solid var(--line);
+}
+.case-foot a {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+.case-foot p {
+  margin: 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ---- narrow ---- */
+
+@media (max-width: 860px) {
+  .spine-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .spine-row__label {
+    position: static;
+  }
+  .scan-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-back svg {
+    transition: none;
+  }
+}

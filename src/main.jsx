@@ -28,7 +28,6 @@ import Ink from "./Ink";
 import ImpactNote from "./ImpactNote";
 import Podcast from "./Podcast";
 import Worlds from "./Worlds";
-import CaseEvidence from "./CaseEvidence";
 import FilmJournal from "./FilmJournal";
 import QuietField from "./QuietField";
 import PageThread from "./PageThread";
@@ -41,6 +40,7 @@ import {
   originalUrl,
 } from "./data";
 import credentials from "./credentials.json";
+import { cardFacts } from "./cases";
 import "./styles.css";
 import "./journal.css";
 import "./refinements.css";
@@ -111,7 +111,6 @@ function ProjectDialog({ project, close }) {
             <strong>My role</strong>
             {project.role}
           </p>
-          <CaseEvidence project={project} />
           {[
             ["The question", project.challenge],
             ["How I approached it", project.approach],
@@ -189,6 +188,14 @@ function App() {
   }, []);
   const motionOff = calm || reduced;
   const exploreImpactWork = (id) => {
+    // Anything with a case study goes to its own page, the same destination as
+    // the project card, so there is one route to each piece of evidence.
+    const href =
+      cardFacts[id]?.href || (id === "experience-uniqlo" ? "/work/uniqlo/" : null);
+    if (href) {
+      window.location.assign(href);
+      return;
+    }
     const selectedProject = projects.find((item) => item.id === id);
     if (selectedProject) {
       setProject(selectedProject);
@@ -394,6 +401,32 @@ function App() {
                 <ArrowUpRight size={19} />
               </a>
             </div>
+            {/* Straight to the evidence, for anyone who has 60 seconds. */}
+            <div className="hero-proof">
+              <p className="hero-proof__label">
+                Or go straight to the receipts
+              </p>
+              <ul>
+                <li>
+                  <a href="/projects/career-os/">
+                    <strong>Career OS</strong>
+                    <span>Solo build · 18 days · deployed MVP</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/projects/ciairi/">
+                    <strong>RMIT CIAIRI</strong>
+                    <span>Research team · 5,000+ Scopus records</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/work/uniqlo/">
+                    <strong>UNIQLO Malaysia HQ</strong>
+                    <span>Current role · 60+ store network</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <HeroPortrait calm={motionOff} theme={theme} />
         </section>
@@ -483,12 +516,20 @@ function App() {
             ))}
           </div>
           <div className="project-grid" aria-live="polite">
-            {visibleProjects.map((p) => (
+            {visibleProjects.map((p) => {
+              const facts = cardFacts[p.id];
+              // Projects with a full case study open their own URL, so the page
+              // can be sent to someone. The rest open in place.
+              const Open = facts?.href ? "a" : "button";
+              const openProps = facts?.href
+                ? { href: facts.href }
+                : { type: "button", onClick: () => setProject(p) };
+              return (
               <Reveal key={p.id} calm={motionOff}>
                 <article className={"project-card " + p.kind}>
-                  <button
+                  <Open
                     className="project-open"
-                    onClick={() => setProject(p)}
+                    {...openProps}
                     aria-label={`Read ${p.name} case study`}
                   >
                     <span className={"project-art " + p.kind}>
@@ -518,10 +559,27 @@ function App() {
                     </span>
                     <span className="project-title">{p.name}</span>
                     <span className="project-summary">{p.summary}</span>
-                  </button>
+                    {facts && (
+                      <span className="project-facts">
+                        <span>
+                          <em>Role</em>
+                          {facts.role}
+                        </span>
+                        <span>
+                          <em>Scale</em>
+                          {facts.scale}
+                        </span>
+                        <span>
+                          <em>Delivered</em>
+                          {facts.delivered}
+                        </span>
+                      </span>
+                    )}
+                  </Open>
                 </article>
               </Reveal>
-            ))}
+              );
+            })}
           </div>
           {filter === "All work" && (
             <button

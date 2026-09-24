@@ -2,7 +2,9 @@ node_modules/
 dist/
 .DS_Store
 .vercel/
-work/
+work/*
+# ...except the published case-study page.
+!work/uniqlo/
 .env*
 !.env.example
 
