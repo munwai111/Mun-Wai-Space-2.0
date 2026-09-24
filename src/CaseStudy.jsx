@@ -120,6 +120,7 @@ export default function CaseStudy({ record }) {
                 ))}
               </p>
             )}
+            {c.linksNote && <p className="case-links__note">{c.linksNote}</p>}
           </header>
 
           {c.stats && (

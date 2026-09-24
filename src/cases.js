@@ -36,7 +36,7 @@ export const cases = {
     method:
       "Onboarding built separately for each side, then matching on skills and goal alignment rather than keyword overlap. AI career coaching and salary benchmarking sit inside the same flow, so the advice arrives where the decision is made.",
     deliveredDetail:
-      "A working platform with authentication, a database and 35 API routes, deployed and still open to anyone with the link.",
+      "A working platform with authentication, a database and 35 API routes, deployed and still open to anyone with the link. It ships under the product name Y.O.U, Your Odyssey Vector.",
     result:
       "It did not advance to the first cohort. The build works and remains live, and the repository is public, so the claims on this page can be checked.",
     validation:
@@ -45,7 +45,10 @@ export const cases = {
       "The hardest part was the line from first sign-in to a useful next action. Shipping the whole journey taught me more than adding another isolated AI feature.",
     stack: ["Next.js", "TypeScript", "Clerk", "Supabase", "pgvector", "Claude"],
     links: [
-      { label: "Open the demo", href: "https://career-os-dusky.vercel.app/" },
+      {
+        label: "Open Y.O.U, the live build",
+        href: "https://career-os-dusky.vercel.app/",
+      },
       {
         label: "Read the code",
         href: "https://github.com/munwai111/Talentbank-tech-hackathon-2026-challenge-Mun_Wai",
@@ -199,6 +202,11 @@ export const cases = {
       "Read-only is a hard rule in the architecture, not a setting. The system never places an order.",
     learning:
       "Building the argument against my own position was more useful than any recommendation the system could give me.",
+    links: [
+      { label: "Open the public demo", href: "https://m1das-demo.vercel.app" },
+    ],
+    linksNote:
+      "The demo runs on a synthetic case file. Every figure in it is invented and it reads no real account, so the system can be shown without opening my own ledger.",
   },
 
   uniqlo: {
