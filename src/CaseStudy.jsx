@@ -227,6 +227,13 @@ export default function CaseStudy({ record }) {
                     <article key={a.title} className="artefact">
                       <h3>{a.title}</h3>
                       <p>{a.body}</p>
+                      {a.steps && (
+                        <ol className="artefact__steps">
+                          {a.steps.map((st) => (
+                            <li key={st}>{st}</li>
+                          ))}
+                        </ol>
+                      )}
                       <p className="artefact__links">
                         {a.links.map((l) => (
                           <a

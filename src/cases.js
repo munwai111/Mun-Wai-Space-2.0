@@ -102,7 +102,16 @@ export const cases = {
         },
         {
           title: "Pathway tool",
-          body: "A pathway is built from the student type first, with the differences between the domestic and international routes stated before the options rather than buried inside them. The workflow runs from a pathway list to a viewer, an expanded detail view and a saved set of favourites.",
+          body: "The tool asks for one thing at a time instead of presenting everything at once, and the differences between the domestic and international routes are stated before the options rather than buried inside them. A supporting FAQ page sits alongside the flow.",
+          steps: [
+            "Student type",
+            "Area of interest",
+            "Sub-area of interest",
+            "Dream institutions",
+            "Course list",
+            "Pathway viewer",
+            "Saved favourites",
+          ],
           links: [
             {
               label: "Walk the prototype",
