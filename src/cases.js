@@ -67,8 +67,6 @@ export const cases = {
     scanRole: "Behavioural benchmarking, UX research, interface design",
     delivered: "Multi-tiered pathway and course-comparison MVP",
     spine: "research",
-    responsibility:
-      "My responsibility: behavioural benchmarking, UX research and interface design.",
     problem:
       "Students choosing a course are comparing options that do not line up with each other, across more information than anyone reads, while the decision itself carries years of consequence.",
     role: "Behavioural benchmarking, UX research and interface design, within a three-person project at VTAC.",
