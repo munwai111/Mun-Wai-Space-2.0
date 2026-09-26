@@ -281,3 +281,10 @@ html.impact-open .reading-progress {
   line-height: 1.45;
   letter-spacing: -0.018em;
 }
+
+/* Divider between the one-at-a-time panel and the all-seven grid. */
+.all-work-label {
+  margin: clamp(42px, 6vw, 68px) 0 20px;
+  padding-top: clamp(22px, 3vw, 32px);
+  border-top: 1px solid var(--line);
+}

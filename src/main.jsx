@@ -539,6 +539,57 @@ function App() {
             </ul>
           </Reveal>
           <ProjectWorlds calm={motionOff} onOpen={setProject} />
+
+          {/* The panel shows one project properly; the grid puts all seven
+              side by side for anyone who would rather scan than click. */}
+          <p className="section-label all-work-label">ALL SEVEN, SIDE BY SIDE</p>
+          <div className="project-grid">
+            {projects.map((p) => {
+              const facts = cardFacts[p.id];
+              const Open = facts?.href ? "a" : "button";
+              const openProps = facts?.href
+                ? { href: facts.href }
+                : { type: "button", onClick: () => setProject(p) };
+              return (
+                <Reveal key={p.id} calm={motionOff}>
+                  <article className={"project-card " + p.kind}>
+                    <Open
+                      className="project-open"
+                      {...openProps}
+                      aria-label={`Read ${p.name} case study`}
+                    >
+                      <span className={"project-art " + p.kind}>
+                        <span className="poster-mark assembly">{p.mark}</span>
+                        <span className="poster-caption">{facts?.caption}</span>
+                      </span>
+                      <span className="project-meta">
+                        <span>{p.category}</span>
+                        <span>{p.status}</span>
+                      </span>
+                      <span className="project-title">{p.name}</span>
+                      <span className="project-summary">{p.summary}</span>
+                      {facts && (
+                        <span className="project-facts">
+                          <span>
+                            <em>Role</em>
+                            {facts.role}
+                          </span>
+                          <span>
+                            <em>Scale</em>
+                            {facts.scale}
+                          </span>
+                          <span>
+                            <em>Delivered</em>
+                            {facts.delivered}
+                          </span>
+                        </span>
+                      )}
+                    </Open>
+                  </article>
+                </Reveal>
+              );
+            })}
+          </div>
         </section>
         <Worlds calm={motionOff} />
         <section id="experience" className="experience section-wrap">
