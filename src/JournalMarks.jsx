@@ -27,20 +27,24 @@ const notes = {
   ],
   SuperAI: ["SINGAPORE", "AI FIELD NOTES", "Meet. Listen. Explore.", "2025"],
 };
-export default function JournalMarks({ name }) {
-  const [place, label, note, kind] = notes[name];
+export default function JournalMarks({ name, marks }) {
+  // A missing entry used to destructure undefined and take the whole page
+  // down with it, so an unknown name now degrades to just the sticker.
+  const [place, label, note, kind] = marks || notes[name] || [];
   return (
     <div className="journal-marks" aria-label={`${name} journal keepsakes`}>
       <span className="journal-sticker">
         <span>{name}</span>
       </span>
-      <span className="journal-stamp">
-        <small>{place}</small>
-        <strong>{label}</strong>
-        <small>{kind}</small>
-      </span>
+      {label && (
+        <span className="journal-stamp">
+          <small>{place}</small>
+          <strong>{label}</strong>
+          <small>{kind}</small>
+        </span>
+      )}
       <span className="journal-pin" aria-hidden="true" />
-      <span className="journal-handnote">{note}</span>
+      {note && <span className="journal-handnote">{note}</span>}
     </div>
   );
 }

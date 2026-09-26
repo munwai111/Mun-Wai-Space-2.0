@@ -7,7 +7,6 @@ import {
   ArrowDown,
   X,
   Plus,
-  Minus,
   Sun,
   Moon,
   Pause,
@@ -41,6 +40,7 @@ import {
 } from "./data";
 import credentials from "./credentials.json";
 import { cardFacts } from "./cases";
+import ProjectWorlds from "./ProjectWorlds";
 import "./styles.css";
 import "./journal.css";
 import "./refinements.css";
@@ -164,8 +164,6 @@ function App() {
   });
   const [menu, setMenu] = useState(false);
   const menuTrigger = useRef(null);
-  const [filter, setFilter] = useState("All work");
-  const [expanded, setExpanded] = useState(false);
   const [project, setProject] = useState(null);
   const [perspective, setPerspective] = useState(0);
   const [lightbox, setLightbox] = useState(null);
@@ -247,9 +245,6 @@ function App() {
     const t = setTimeout(() => setCopied(false), 2400);
     return () => clearTimeout(t);
   }, [copied]);
-  const visibleProjects = projects
-    .filter((p) => filter === "All work" || p.category === filter)
-    .slice(0, expanded || filter !== "All work" ? 99 : 4);
   const matches = credentials.filter(
     (c) =>
       (credentialCategory === "All disciplines" ||
@@ -543,96 +538,7 @@ function App() {
               ))}
             </ul>
           </Reveal>
-          <div className="filter-row" role="group" aria-label="Filter projects">
-            {["All work", "AI & product", "Research & strategy"].map((f) => (
-              <button
-                key={f}
-                aria-pressed={filter === f}
-                className={filter === f ? "selected" : ""}
-                onClick={() => setFilter(f)}
-              >
-                {f}
-                {f === "All work" && <span>{projects.length}</span>}
-              </button>
-            ))}
-          </div>
-          <div className="project-grid" aria-live="polite">
-            {visibleProjects.map((p) => {
-              const facts = cardFacts[p.id];
-              // Projects with a full case study open their own URL, so the page
-              // can be sent to someone. The rest open in place.
-              const Open = facts?.href ? "a" : "button";
-              const openProps = facts?.href
-                ? { href: facts.href }
-                : { type: "button", onClick: () => setProject(p) };
-              return (
-              <Reveal key={p.id} calm={motionOff}>
-                <article className={"project-card " + p.kind}>
-                  <Open
-                    className="project-open"
-                    {...openProps}
-                    aria-label={`Read ${p.name} case study`}
-                  >
-                    <span className={"project-art " + p.kind}>
-                      <span className="poster-mark assembly">{p.mark}</span>
-                      <span className="poster-caption">
-                        {p.id === "career-os"
-                          ? "YOUR NEXT CHAPTER"
-                          : p.id === "midas"
-                            ? "A DIFFERENT PERSPECTIVE"
-                            : p.id === "vtac"
-                              ? "A CLEARER WAY THROUGH"
-                              : p.id === "research"
-                                ? "ASK A BETTER QUESTION"
-                                : p.id === "insight"
-                                  ? "KEEP THE GOOD IDEAS"
-                                  : p.id === "metaxy"
-                                    ? "CONTEXT MATTERS"
-                                    : "LEARNING, CONNECTED"}
-                      </span>
-                      <span className="open-project">
-                        <ArrowUpRight size={25} />
-                      </span>
-                    </span>
-                    <span className="project-meta">
-                      <span>{p.category}</span>
-                      <span>{p.status}</span>
-                    </span>
-                    <span className="project-title">{p.name}</span>
-                    <span className="project-summary">{p.summary}</span>
-                    {facts && (
-                      <span className="project-facts">
-                        <span>
-                          <em>Role</em>
-                          {facts.role}
-                        </span>
-                        <span>
-                          <em>Scale</em>
-                          {facts.scale}
-                        </span>
-                        <span>
-                          <em>Delivered</em>
-                          {facts.delivered}
-                        </span>
-                      </span>
-                    )}
-                  </Open>
-                </article>
-              </Reveal>
-              );
-            })}
-          </div>
-          {filter === "All work" && (
-            <button
-              className="button outline more-work"
-              onClick={() => setExpanded(!expanded)}
-            >
-              {expanded
-                ? "Show selected work"
-                : `Explore all ${projects.length} projects`}
-              {expanded ? <Minus size={18} /> : <Plus size={18} />}
-            </button>
-          )}
+          <ProjectWorlds calm={motionOff} onOpen={setProject} />
         </section>
         <Worlds calm={motionOff} />
         <section id="experience" className="experience section-wrap">

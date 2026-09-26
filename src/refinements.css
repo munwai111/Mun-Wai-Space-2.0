@@ -243,18 +243,19 @@ html.impact-open .reading-progress {
 }
 
 /* Four areas, each pointed at the work that demonstrates it. */
+/* Individually bordered cells rather than a gridline background: four items
+   in a three-column grid left an empty cell showing as a grey block. */
 .positioning {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 1px;
+  gap: 10px;
   margin: 34px 0 44px;
   padding: 0;
   list-style: none;
-  background: var(--line);
-  border: 1px solid var(--line);
 }
 .positioning li {
   background: var(--paper);
+  border: 1px solid var(--line);
 }
 .positioning a {
   display: grid;
