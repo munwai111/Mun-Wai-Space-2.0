@@ -180,19 +180,66 @@ export const cases = {
   ciairi: {
     slug: "ciairi",
     href: "/projects/ciairi/",
-    name: "Why good ideas get adopted",
+    name: "Researching why innovation succeeds, or fails",
     line: "What the evidence supports, and what it only suggests.",
     kind: "TEAM RESEARCH",
     discipline: "Research methodology · Bibliometrics",
+    eyebrow: ["RMIT UNIVERSITY", "INDUSTRIAL AI", "BEHAVIOURAL RESEARCH"],
+    org: "RMIT Centre for Industrial AI Research and Innovation",
+    period: "July 2024 to April 2025",
+    disciplines: [
+      "Behavioural science",
+      "Research translation",
+      "AI",
+      "Innovation science",
+      "Data analysis",
+      "Psychology",
+    ],
     scale: "5,000+ Scopus records",
-    scanRole: "Methodology, analysis, bibliometrics, validation",
+    scanRole: "Research assistant and data analyst",
     delivered: "Validated research structure and bibliometric analysis",
     spine: "research",
     responsibility:
       "My contribution sat inside a multidisciplinary team of researchers, HDR candidates and professors.",
+
+    // The one source that is about him rather than around him.
+    feature: {
+      tag: "OFFICIAL RMIT FEATURE",
+      title: "RMIT wrote about how this internship started.",
+      body: "RMIT's own article names him, his psychology degree and the centre, and records that the placement turned into paid research assistant and data analyst work after the team saw progress.",
+      quote:
+        "One of them took me on because he was doing a research project on an AI tool that can help determine the causal factors of success and failures. So that's where the internship started.",
+      attribution: "Mun Wai, quoted by RMIT University",
+      cta: "Read the RMIT feature",
+      href: "https://www.rmit.edu.au/study-with-us/discover-rmit/four-tips-for-landing-your-dream-internship-in-australia",
+    },
+
+    story: [
+      "I did not arrive at industrial AI through software. I arrived through psychology.",
+      "The placement was a compulsory subject in my Applied Science (Psychology) degree, so I started asking my lecturers. One of them was working on an AI tool meant to determine the causal factors behind why projects succeed and fail, and took me on.",
+      "The psychology turned out to be the useful part. Whether an innovation gets adopted is a question about people: what they are motivated by, what they judge to be worth the risk, what they resist and why. The team saw progress, I asked about an extension, and the placement became paid research assistant and data analyst work.",
+    ],
+
+    question: {
+      headline: "Why do promising innovations fail?",
+      body: "Rarely for one reason, and rarely only a technical one. The research treats it as a question with many dimensions at once.",
+      dimensions: [
+        ["Technology", "Whether the thing works is the start of the question, not the end of it."],
+        ["Behaviour", "Adoption is a decision a person makes, with all that implies."],
+        ["Adoption", "Being available and being taken up are different outcomes."],
+        ["Market", "A real need, and someone who will act on it."],
+        ["Resources", "Time and funding decide what can be finished."],
+        ["Team", "Who is doing it, and whether they can carry it."],
+        ["Risk", "What is at stake if it does not work."],
+        ["Delivery", "Getting from a result to something usable."],
+        ["Translation", "Moving research out of the place that produced it."],
+        ["Stakeholders", "The people whose agreement the outcome depends on."],
+      ],
+    },
+
     problem:
       "Innovation research is scattered across disciplines that rarely cite each other. Before anything can be concluded about what helps an idea get adopted, the evidence has to be found, organised and checked.",
-    role: "Research methodology, evidence collection and organisation, analysis, bibliometric visualisation, interpretation, validation, and interface specifications for the associated web tool.",
+    role: "Research assistant and data analyst. Research methodology, evidence collection and organisation, analysis, bibliometric visualisation, interpretation, validation, and interface specifications for the associated web tool.",
     evidence:
       "Over 5,000 Scopus records, retrieved through a defined search strategy, screened and classified into five research categories.",
     method:
@@ -202,7 +249,8 @@ export const cases = {
     result: "Contributed to the wider ADOPTIC and innovation-commercialisation research.",
     widerOutcome:
       "The wider research programme received ARC support. That funding belongs to the programme and the researchers who secured it, not to me.",
-    validation: "Research assistant intern at RMIT University CIAIRI, July 2024 to April 2025.",
+    validation:
+      "Research assistant intern at RMIT University CIAIRI, July 2024 to April 2025. Named in RMIT's own feature on internships.",
     learning:
       "Most of the work was deciding what the records did not support. A clean structure is what makes a later claim defensible.",
     pipeline: [
@@ -216,6 +264,114 @@ export const cases = {
       "Evidence validation",
       "Framework and research outputs",
     ],
+
+    psychology: {
+      headline: "The AI problem was also a human problem.",
+      body: "A tool that predicts whether a project will be adopted is making a claim about how people decide. That is the part a psychology degree is actually for.",
+      factors: [
+        "Motivation",
+        "Perception",
+        "Risk",
+        "Value",
+        "Resistance",
+        "Social influence",
+        "Decision making",
+      ],
+      caveat:
+        "Psychology does not decide on its own whether an innovation succeeds. It is one dimension among the several the research treats together.",
+    },
+
+    lineage: {
+      title: "The research lineage",
+      note: "These publications are the context around the work, not my work. I am not an author of any of them.",
+      entries: [
+        {
+          year: "2019",
+          who: "Timothy Eric Stroh",
+          what: "A Practitioner's Perspective on the Benefits of Open Innovation",
+          where: "Journal of Innovation Management",
+        },
+        {
+          year: "2022",
+          who: "Tim Stroh, Anne-Laure Mention and Cameron Duff",
+          what: "How Do Psychological Factors Affect Innovation and Adoption Decisions?",
+          where: "International Journal of Innovation Management",
+          idea: "Psychological mechanisms shape adoption and innovation outcomes.",
+        },
+        {
+          year: "2023",
+          who: "Tim Stroh, Anne-Laure Mention and Cameron Duff",
+          what: "The Impact of Evolved Psychological Mechanisms on Innovation and Adoption: A Systematic Literature Review",
+          where: "Technovation",
+          idea: "A systematic synthesis of the mechanisms behind adoption and resistance.",
+        },
+        {
+          year: "2023",
+          who: "Jason Scholz, Timothy E. Stroh, Joseph J. Richardson, David F. Downes and Swee L. Mak",
+          what: "A Framework for Assessing and Improving Decision-Making in the Translation of Research and Innovation for Impact",
+          where: "Journal of Innovation Management",
+          idea: "A multidimensional assessment framework for research-translation decisions.",
+        },
+        {
+          year: "2024 to 2025",
+          who: "Mun Wai",
+          what: "Research assistant and data analyst at RMIT CIAIRI",
+          where: "Not a publication. My contribution to the research environment.",
+          mine: true,
+        },
+        {
+          year: "2025",
+          who: "ARC Centre of Excellence for Engineered Quantum Systems",
+          what: "Fact to Impact",
+          where: "White paper",
+          idea: "An external programme reports analysing its projects with the Adoptic framework.",
+        },
+        {
+          year: "2026",
+          who: "Tim Stroh, Parker Stroh and Cailan Lhuede",
+          what: "The Surprising Predictability of Impact and Guidance to Increase Yours",
+          where: "SSRN",
+          idea: "Empirical testing against projects from two ARC Centres of Excellence.",
+        },
+      ],
+    },
+
+    adoptic: {
+      title: "From research questions to decision systems",
+      body: "The wider programme moved from asking what drives adoption towards building something decision makers could use. Adoptic describes itself publicly as a research-governed system for deciding on innovation, rooted in the science of innovation and entrepreneurship.",
+      chain: [
+        "Research",
+        "Synthesis",
+        "Causal factors",
+        "Decision framework",
+        "Adoption",
+        "Impact",
+      ],
+      boundary:
+        "I did not build Adoptic and I am not presented here as having done so. I worked as a research assistant and data analyst inside the RMIT research environment this came out of.",
+      cta: "Explore Adoptic",
+      href: "https://www.adoptic.ai/",
+    },
+
+    variables: {
+      count: 70,
+      label: "causal variables",
+      quote:
+        "a research-based set of 70 causal variables of impact success developed by RMIT and Innovation Sciences Network",
+      attribution:
+        "ARC Centre of Excellence for Engineered Quantum Systems, Fact to Impact, 2025",
+      body: "The figure is the white paper's, not mine, and the variables are not mine either. EQUS charts six of them as showing the greatest movement across its projects.",
+      shown: [
+        "Adaptation",
+        "Risk",
+        "Customer relations",
+        "Delivery",
+        "Team initiative",
+        "Translation experience",
+      ],
+      cta: "View the EQUS report",
+      href: "https://equs.org/legacy/wp-content/uploads/2025/09/EQUS-Translation-white-paper-final.pdf",
+    },
   },
 
   metaxy: {

@@ -77,7 +77,7 @@ export const projects = [
   },
   {
     id: "research",
-    name: "Why good ideas get adopted",
+    name: "Researching why innovation succeeds, or fails",
     subtitle: "Looking beyond the technology.",
     category: "Research & strategy",
     status: "Research internship",

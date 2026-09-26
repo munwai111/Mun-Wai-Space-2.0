@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowUpRight, Moon, Sun } from "@phosphor-icons/react";
+import { ResearchIntro, ResearchDepth } from "./ResearchCase";
 import "./case-study.css";
 
 // Ownership marker. Every claim on the page is attributed to one of these, so a
@@ -74,7 +75,7 @@ export default function CaseStudy({ record }) {
     <div className="case-page">
       <header className="case-top">
         <a className="case-back" href="/#projects">
-          <ArrowLeft size={16} />
+          <ArrowLeft size={16} aria-hidden="true" />
           <span>
             Mun Wai Space<sup aria-hidden="true">™</sup>
           </span>
@@ -86,11 +87,16 @@ export default function CaseStudy({ record }) {
         <article className="case-body">
           <header className="case-hero">
             <p className="case-kind">
-              <span>{c.kind}</span>
-              <span className="case-kind__sep" aria-hidden="true">
-                ·
-              </span>
-              <span>{c.discipline}</span>
+              {(c.eyebrow || [c.kind, c.discipline]).map((part, i) => (
+                <span key={part} className="case-kind__part">
+                  {i > 0 && (
+                    <span className="case-kind__sep" aria-hidden="true">
+                      ·
+                    </span>
+                  )}
+                  {part}
+                </span>
+              ))}
             </p>
             <h1>{c.name}</h1>
             <p className="case-line">{c.line}</p>
@@ -111,6 +117,30 @@ export default function CaseStudy({ record }) {
               </div>
             </dl>
 
+            {(c.org || c.disciplines) && (
+              <div className="case-context">
+                {c.org && (
+                  <p>
+                    <span>Organisation</span>
+                    {c.org}
+                  </p>
+                )}
+                {c.period && (
+                  <p>
+                    <span>Period</span>
+                    {c.period}
+                  </p>
+                )}
+                {c.disciplines && (
+                  <ul aria-label="Disciplines">
+                    {c.disciplines.map((d) => (
+                      <li key={d}>{d}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            )}
+
             {c.links && (
               <p className="case-links">
                 {c.links.map((l) => (
@@ -122,6 +152,8 @@ export default function CaseStudy({ record }) {
             )}
             {c.linksNote && <p className="case-links__note">{c.linksNote}</p>}
           </header>
+
+          <ResearchIntro record={c} />
 
           {c.stats && (
             <section className="case-stats" aria-label="Build record">
@@ -313,6 +345,8 @@ export default function CaseStudy({ record }) {
               </Row>
             )}
           </div>
+
+          <ResearchDepth record={c} />
 
           <aside className="case-learning">
             <p className="case-learning__label">WHAT I TOOK FROM IT</p>
