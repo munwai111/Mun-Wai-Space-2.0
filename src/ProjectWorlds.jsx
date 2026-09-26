@@ -101,12 +101,6 @@ export default function ProjectWorlds({ calm, onOpen }) {
                 </dl>
               )}
 
-              <ul className="pworld-stack" aria-label="Built with">
-                {p.stack.map((s) => (
-                  <li key={s}>{s}</li>
-                ))}
-              </ul>
-
               <div className="pworld-actions">
                 {facts.href ? (
                   <a className="pworld-cta" href={facts.href}>
