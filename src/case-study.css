@@ -647,3 +647,68 @@
   color: var(--muted);
   opacity: 0.7;
 }
+
+/* The benchmarking, as it was actually scored. */
+.benchmark {
+  margin-top: 22px;
+  border: 1px solid var(--line);
+}
+.benchmark__title {
+  margin: 0 !important;
+  padding: 15px 18px 14px;
+  border-bottom: 1px solid var(--line);
+  font-size: 9.5px !important;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.benchmark__sets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+.benchmark__sets > div {
+  padding: 17px 18px 18px;
+  background: var(--paper);
+}
+.benchmark h3 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+.benchmark__count {
+  margin: 0 0 13px !important;
+  font-size: 11px !important;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+.benchmark ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+.benchmark li {
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  line-height: 1.4;
+  letter-spacing: -0.012em;
+}
+.benchmark li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+.benchmark__note {
+  margin: 0 !important;
+  padding: 14px 18px 15px;
+  border-top: 1px solid var(--line);
+  font-size: 11.5px !important;
+  line-height: 1.6 !important;
+  color: var(--muted);
+}

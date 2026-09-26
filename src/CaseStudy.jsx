@@ -161,6 +161,25 @@ export default function CaseStudy({ record }) {
             {c.evidence && (
               <Row index={next()} label="Evidence">
                 <p>{c.evidence}</p>
+                {c.benchmark && (
+                  <div className="benchmark">
+                    <p className="benchmark__title">{c.benchmark.title}</p>
+                    <div className="benchmark__sets">
+                      {c.benchmark.sets.map((set) => (
+                        <div key={set.tool}>
+                          <h3>{set.tool}</h3>
+                          <p className="benchmark__count">{set.count}</p>
+                          <ul>
+                            {set.criteria.map((cr) => (
+                              <li key={cr}>{cr}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="benchmark__note">{c.benchmark.note}</p>
+                  </div>
+                )}
               </Row>
             )}
 

@@ -71,7 +71,33 @@ export const cases = {
       "Students choosing a course are comparing options that do not line up with each other, across more information than anyone reads, while the decision itself carries years of consequence.",
     role: "Behavioural benchmarking, UX research and interface design, within a three-person project at VTAC.",
     evidence:
-      "Competitor course and pathway sites, examined for how each one structures and presents the same kind of information, and the decision journeys students move through when comparing options.",
+      "Comparable course and pathway services, each one ranked against named criteria with the pros and cons of its features written up: six services behind the pathway tool, five behind the comparison tool. Alongside that, the decision journeys students move through when comparing options.",
+    benchmark: {
+      title: "What each service was ranked on",
+      sets: [
+        {
+          tool: "Pathway tool",
+          count: "6 services compared",
+          criteria: [
+            "User friendliness and familiarity",
+            "Visual design",
+            "Seamless navigation",
+            "Information formatting and display",
+          ],
+        },
+        {
+          tool: "Comparison tool",
+          count: "5 services compared",
+          criteria: [
+            "Visual design",
+            "Ease of use and capabilities",
+            "Relevance of presented information",
+            "Other relevant findings and aspects",
+          ],
+        },
+      ],
+      note: "From the project deck, 14 April 2025. The services compared are not named here. Information formatting and display was one of the criteria before it was a finding, which is where the argument on this page started.",
+    },
     method:
       "Benchmark how comparable services sequence information, then follow the points where a student has to hold several things in mind at once to make a comparison.",
     finding:
