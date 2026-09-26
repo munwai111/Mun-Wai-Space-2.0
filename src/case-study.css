@@ -712,3 +712,51 @@
   line-height: 1.6 !important;
   color: var(--muted);
 }
+
+/* The mapping phase that turned the research into an MVP feature set. */
+.mapping {
+  margin-top: 20px;
+  border: 1px solid var(--line);
+}
+.mapping__title {
+  margin: 0 !important;
+  padding: 15px 18px 14px;
+  border-bottom: 1px solid var(--line);
+  font-size: 9.5px !important;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.mapping__body {
+  padding: 17px 18px 18px;
+}
+.mapping__objective {
+  margin: 0 0 14px !important;
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+.mapping ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+.mapping li {
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  line-height: 1.4;
+  letter-spacing: -0.012em;
+  color: var(--muted);
+}
+.mapping__note {
+  margin: 0 !important;
+  padding: 14px 18px 15px;
+  border-top: 1px solid var(--line);
+  font-size: 11.5px !important;
+  line-height: 1.6 !important;
+  color: var(--muted);
+}

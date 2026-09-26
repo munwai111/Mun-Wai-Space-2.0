@@ -200,6 +200,20 @@ export default function CaseStudy({ record }) {
                   note="Observation, then pattern, then interpretation, with the competing explanation kept in view before any recommendation."
                 />
               )}
+              {c.mapping && (
+                <div className="mapping">
+                  <p className="mapping__title">{c.mapping.title}</p>
+                  <div className="mapping__body">
+                    <p className="mapping__objective">{c.mapping.objective}</p>
+                    <ul>
+                      {c.mapping.focus.map((f) => (
+                        <li key={f}>{f}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <p className="mapping__note">{c.mapping.note}</p>
+                </div>
+              )}
             </Row>
 
             {c.finding && (

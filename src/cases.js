@@ -155,6 +155,18 @@ export const cases = {
       "Presented to stakeholders at VTAC on 14 April 2025. I was one of the two presenters.",
     learning:
       "A useful interface does not always need more information. Sometimes it needs a clearer sequence and a more obvious next decision.",
+    mapping: {
+      title: "UX mapping phase",
+      objective:
+        "Ascertain the essential features and functions for the MVP prototype.",
+      focus: [
+        "Pathway stages",
+        "Relevant course information",
+        "Ease of use, specifically for year-12 students",
+        "Additional tools to support first-time applicants",
+      ],
+      note: "Mapping the high-level pathway process is where the supporting features came from. A help route available across the whole process and a way to save pathways were notes on the map first; they became the FAQ page and the favourites list in the wireframe that followed.",
+    },
     reasoning: [
       "Students say they lack information",
       "The same information exists, presented differently across services",
