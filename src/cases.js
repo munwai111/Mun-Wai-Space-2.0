@@ -151,7 +151,8 @@ export const cases = {
         },
       ],
     },
-    validation: "Presented to stakeholders at VTAC.",
+    validation:
+      "Presented to stakeholders at VTAC on 14 April 2025. I was one of the two presenters.",
     learning:
       "A useful interface does not always need more information. Sometimes it needs a clearer sequence and a more obvious next decision.",
     reasoning: [
