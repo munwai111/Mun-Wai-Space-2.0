@@ -240,6 +240,43 @@ export const cases = {
     problem:
       "Innovation research is scattered across disciplines that rarely cite each other. Before anything can be concluded about what helps an idea get adopted, the evidence has to be found, organised and checked.",
     role: "Research assistant and data analyst. Research methodology, evidence collection and organisation, analysis, bibliometric visualisation, interpretation, validation, and interface specifications for the associated web tool.",
+    contribution: {
+      note: "Owner-stated, and consistent with the research assistant and data analyst role RMIT describes.",
+      groups: [
+        {
+          label: "Finding the evidence",
+          items: [
+            "Systematic literature research",
+            "Academic database research",
+            "Boolean search strategy",
+            "Scopus",
+          ],
+        },
+        {
+          label: "Structuring it",
+          items: [
+            "Multidimensional literature review",
+            "Research taxonomy and knowledge categorisation",
+            "Data extraction",
+            "Data cleaning and validation",
+          ],
+        },
+        {
+          label: "Reading it",
+          items: [
+            "Bibliometric analysis",
+            "VOSviewer",
+            "Qualitative and quantitative evidence integration",
+            "Behavioural interpretation",
+            "Research synthesis",
+          ],
+        },
+        {
+          label: "How the work was done",
+          items: ["AI-assisted research workflows"],
+        },
+      ],
+    },
     evidence:
       "Over 5,000 Scopus records, retrieved through a defined search strategy, screened and classified into five research categories.",
     method:

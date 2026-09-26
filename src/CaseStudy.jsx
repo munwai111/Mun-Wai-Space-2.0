@@ -188,6 +188,21 @@ export default function CaseStudy({ record }) {
                   ))}
                 </ul>
               )}
+              {c.contribution && (
+                <div className="contribution">
+                  {c.contribution.groups.map((g) => (
+                    <div key={g.label}>
+                      <h3>{g.label}</h3>
+                      <ul>
+                        {g.items.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                  <p className="contribution__note">{c.contribution.note}</p>
+                </div>
+              )}
             </Row>
 
             {c.evidence && (
