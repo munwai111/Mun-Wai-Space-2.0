@@ -279,6 +279,8 @@ export const cases = {
     },
     evidence:
       "Over 5,000 Scopus records, retrieved through a defined search strategy, screened and classified into five research categories.",
+    evidenceNote:
+      "The record count is owner-stated, from the project record. It is not published anywhere I can point you to.",
     method:
       "Systematic literature review with a documented search strategy, screening and classification, keyword and thematic structuring, bibliometric visualisation, then validation of what the records actually support.",
     deliveredDetail:

@@ -760,3 +760,14 @@
   line-height: 1.6 !important;
   color: var(--muted);
 }
+
+/* Provenance label for a figure that cannot be checked from a public source.
+   Scoped to the row so it wins over the body-paragraph size above. */
+.spine-row__body .evidence__note {
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: var(--muted);
+  max-width: 54ch;
+}

@@ -27,6 +27,24 @@ function Row({ index, label, owner, children, tone }) {
   );
 }
 
+// Derived from the stats themselves so a figure can never be added without
+// saying where it came from. `verified` decides which sentence a unit lands in.
+function statsSource(stats) {
+  const join = (units) =>
+    units.length > 1
+      ? `${units.slice(0, -1).join(", ")} and ${units[units.length - 1]}`
+      : units[0];
+  const sentences = [];
+  const checkable = stats.filter((s) => s.verified).map((s) => s.unit);
+  const stated = stats.filter((s) => !s.verified).map((s) => s.unit);
+  if (checkable.length)
+    sentences.push(`${join(checkable)} are countable in the public repository.`);
+  if (stated.length)
+    sentences.push(`${join(stated)} are my own, from the project record.`);
+  const line = sentences.join(" ");
+  return line.charAt(0).toUpperCase() + line.slice(1);
+}
+
 function Chain({ steps, title, note }) {
   return (
     <div className="chain">
@@ -164,10 +182,7 @@ export default function CaseStudy({ record }) {
                   <span className="case-stats__note">{s.note}</span>
                 </div>
               ))}
-              <p className="case-stats__source">
-                Days and commits are checkable in the public repository. The
-                integration count is my own, from the project record.
-              </p>
+              <p className="case-stats__source">{statsSource(c.stats)}</p>
             </section>
           )}
 
@@ -208,6 +223,9 @@ export default function CaseStudy({ record }) {
             {c.evidence && (
               <Row index={next()} label="Evidence">
                 <p>{c.evidence}</p>
+                {c.evidenceNote && (
+                  <p className="evidence__note">{c.evidenceNote}</p>
+                )}
                 {c.benchmark && (
                   <div className="benchmark">
                     <p className="benchmark__title">{c.benchmark.title}</p>

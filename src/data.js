@@ -69,7 +69,7 @@ export const projects = [
     approach:
       "We mapped the student journey, compared existing tools and identified points of confusion. I used a behavioural evaluation scale to assess features and inform our Figma designs.",
     outcome:
-      "A multi-tiered MVP design for pathway building and course selection, presented to stakeholders. This is design work, not a claim that VTAC deployed the entire proposal.",
+      "A multi-tiered MVP design for pathway building and course selection, presented to stakeholders. This is design work: the proposal was presented, not deployed.",
     learning:
       "A more useful interface does not always need more information. Sometimes it needs a better sequence and a clearer next step.",
     stack: ["Figma", "User research", "Behavioural analysis", "Canva"],
