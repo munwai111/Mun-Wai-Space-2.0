@@ -417,7 +417,7 @@ export default function Podcast({ calm }) {
             className="text-link"
             href="https://open.spotify.com/episode/4PGM2iWZIBl0OCHZOANxnC"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Open episode on Spotify <ArrowUpRight />
           </a>
@@ -456,7 +456,7 @@ export default function Podcast({ calm }) {
               className="text-link"
               href="https://www.instagram.com/munwai111/p/DQPTKEwk_a4/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Behind the microphone <ArrowUpRight />
             </a>

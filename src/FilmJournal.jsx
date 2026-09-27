@@ -66,7 +66,7 @@ function FilmViewer({ film, close }) {
           className="film-header-original"
           href={film.url}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           aria-label="Open this reel on Instagram"
         >
           Instagram <ArrowUpRight size={13} />
@@ -108,7 +108,7 @@ function FilmViewer({ film, close }) {
             className="button primary"
             href={film.url}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Open reel on Instagram <ArrowUpRight size={18} />
           </a>
@@ -248,7 +248,7 @@ export default function FilmJournal({ calm }) {
               className="film-original"
               href={selected.url}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <InstagramLogo size={16} />
               <span>{selected.creator}</span>

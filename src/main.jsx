@@ -134,7 +134,7 @@ function ProjectDialog({ project, close }) {
               className="button primary"
               href={project.link}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               {project.linkText}
               <ArrowUpRight size={18} />
@@ -142,7 +142,7 @@ function ProjectDialog({ project, close }) {
           )}
           <p className="source-note">
             {project.source}{" "}
-            <a href={originalUrl + "#builds"} target="_blank" rel="noreferrer">
+            <a href={originalUrl + "#builds"} target="_blank" rel="noopener noreferrer">
               Original portfolio <ArrowUpRight size={12} />
             </a>
           </p>
@@ -728,7 +728,7 @@ function App() {
                 key={story.link}
                 href={`https://www.linkedin.com/feed/update/urn:li:activity:${story.link}/`}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <span className="section-label">{story.label}</span>
                 <h3>
@@ -826,7 +826,7 @@ function App() {
                 className="contact-social"
                 href={linkedin}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <LinkedinLogo size={21} />
                 LinkedIn
@@ -836,7 +836,7 @@ function App() {
                 className="contact-social"
                 href="https://www.instagram.com/munwai111/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="Instagram, @munwai111"
               >
                 <InstagramLogo size={21} aria-hidden="true" />
@@ -847,7 +847,7 @@ function App() {
                 className="contact-social"
                 href="https://github.com/munwai111"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="GitHub, @munwai111"
               >
                 <GithubLogo size={21} aria-hidden="true" />
@@ -1018,7 +1018,7 @@ function App() {
                   href={c.url}
                   className="text-link"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   {c.url.includes("/details/certifications/")
                     ? "View LinkedIn record"

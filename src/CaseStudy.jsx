@@ -144,7 +144,7 @@ export default function CaseStudy({ record }) {
             {c.links && (
               <p className="case-links">
                 {c.links.map((l) => (
-                  <a key={l.href} href={l.href} target="_blank" rel="noreferrer">
+                  <a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer">
                     {l.label} <ArrowUpRight size={14} weight="bold" />
                   </a>
                 ))}
@@ -320,7 +320,7 @@ export default function CaseStudy({ record }) {
                             key={l.href}
                             href={l.href}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                           >
                             {l.label} <ArrowUpRight size={13} weight="bold" />
                           </a>

@@ -916,7 +916,7 @@ export default function Journey({ calm, enlarge }) {
         className="text-link journey-source"
         href={`${originalUrl}#timeline`}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         Explore the original photo archive <ArrowUpRight size={17} />
       </a>

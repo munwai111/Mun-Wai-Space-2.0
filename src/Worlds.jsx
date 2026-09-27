@@ -232,7 +232,7 @@ export default function Worlds({ calm }) {
                 <Ink>{w.headline}</Ink>
               </h3>
               <p>{w.body}</p>
-              <a href={w.url} target="_blank" rel="noreferrer">
+              <a href={w.url} target="_blank" rel="noopener noreferrer">
                 {w.linkLabel}
                 <ArrowUpRight size={20} />
               </a>
